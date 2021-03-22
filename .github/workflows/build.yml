@@ -5,12 +5,12 @@ on: [push, pull_request]
 jobs:
   build:
 
-    runs-on: macos-11.0
+    runs-on: macos-latest
     strategy:
       matrix:
         run-config:
-          - { scheme: 'DEV (macOS)', destination: 'platform=macOS' }
-          - { scheme: 'DEV (iOS)', destination: 'platform=iOS Simulator,OS=14.0,name=iPhone 12' }
+          - { scheme: 'DEV (iOS)', destination: 'platform=iOS Simulator,OS=14.4,name=iPhone 12' }
+          #- { scheme: 'DEV (macOS)', destination: 'platform=macOS' }
 
     steps:
     - name: Checkout Project
