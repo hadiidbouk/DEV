@@ -19,14 +19,5 @@ jobs:
     - name: Show the currently detailed version of Xcode for CLI
       run: xcode-select -p
 
-    - name: Show Build Settings
-      run: xcodebuild -project DEV.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}' -showBuildSettings
-
-    - name: Show Build SDK
-      run: xcodebuild -project DEV.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}' -showsdks
-
-    - name: Show Available Destinations
-      run: xcodebuild -project DEV.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}' -showdestinations
-
     - name: build and test
       run: xcodebuild clean test -scheme '${{ matrix.run-config['scheme'] }}' -destination '${{ matrix.run-config['destination'] }}' -showBuildTimingSummary
