@@ -23,14 +23,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FAABEF0A2609257E00753714"
-               BuildableName = "DEV.app"
-               BlueprintName = "DEV (macOS)"
+               BlueprintIdentifier = "FAABEF63260938E700753714"
+               BuildableName = "DEViOSTests.xctest"
+               BlueprintName = "DEViOSTests"
                ReferencedContainer = "container:DEV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -49,16 +49,6 @@
                BlueprintIdentifier = "FAABEF63260938E700753714"
                BuildableName = "DEViOSTests.xctest"
                BlueprintName = "DEViOSTests"
-               ReferencedContainer = "container:DEV.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FAABEF74260938F900753714"
-               BuildableName = "DEVmacOSTests.xctest"
-               BlueprintName = "DEVmacOSTests"
                ReferencedContainer = "container:DEV.xcodeproj">
             </BuildableReference>
          </TestableReference>
