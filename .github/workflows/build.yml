@@ -1,0 +1,19 @@
+on: [push, pull_request]
+name: CI
+jobs:
+  test-iOS:
+    name: Test iOS
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=14.0,name=iPhone 12']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Testing
+        run: |
+          cd DEV
+          xcodebuild clean test -project DEV.xcodeproj -scheme DEV (iOS) -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          bash <(curl -s https://codecov.io/bash) -t "${CODECOV_TOKEN}"
+        env:
+           destination: ${{ matrix.destination }}
