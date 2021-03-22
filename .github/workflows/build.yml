@@ -1,44 +1,35 @@
-name: iOS starter workflow
+name: CI
 
-on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
-  workflow_dispatch:
-    branches: [ $default-branch ]
+on: [push, pull_request]
 
 jobs:
   build:
-    name: Build and Test default scheme using any available iPhone simulator
+
     runs-on: macos-latest
+    strategy:
+      matrix:
+        run-config:
+          - { scheme: 'DEV (macOS)', destination: 'platform=macOS' }
+          - { scheme: 'DEV (iOS)', destination: 'platform=iOS Simulator,OS=14.0,name=iPhone 12' }
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Set Default Scheme
-        run: |
-          scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
-          echo $default | cat >default
-          echo Using default scheme: $default
-      - name: Build
-        env:
-          scheme: ${{ 'default' }}
-          platform: ${{ 'iOS Simulator' }}
-        run: |
-          device=`instruments -s -devices | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
-          if [ $scheme = default ]; then scheme=$(cat default); fi
-          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
-          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-          xcodebuild build-for-testing -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
-      - name: Test
-        env:
-          scheme: ${{ 'default' }}
-          platform: ${{ 'iOS Simulator' }}
-        run: |
-          device=`instruments -s -devices | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
-          if [ $scheme = default ]; then scheme=$(cat default); fi
-          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
-          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-          xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
+    - name: Checkout Project
+      uses: actions/checkout@v1
+
+    - name: Homebrew build helpers install
+      run: brew bundle
+
+    - name: Show the currently detailed version of Xcode for CLI
+      run: xcode-select -p
+
+    - name: Show Build Settings
+      run: xcodebuild -workspace MPCF-TestBench.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showBuildSettings
+
+    - name: Show Build SDK
+      run: xcodebuild -workspace MPCF-TestBench.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showsdks
+
+    - name: Show Available Destinations
+      run: xcodebuild -workspace MPCF-TestBench.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showdestinations
+
+    - name: build and test
+      run: xcodebuild clean test -scheme '${{ matrix.run-config['scheme'] }}' -destination '${{ matrix.run-config['destination'] }}' -showBuildTimingSummary
