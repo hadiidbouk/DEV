@@ -1,8 +1,8 @@
-# DEV.iOS (Under Development 🔧)
+# DEV (Under Development 🔧)
 
-[![CI](https://github.com/hadiidbouk/DEV.iOS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/hadiidbouk/DEV.iOS/actions/workflows/build.yml)
+[![CI](https://github.com/hadiidbouk/DEV.iOS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/hadiidbouk/DEV/actions/workflows/build.yml)
 
-DEV.iOS is an unofficial multiplatform (iOS and macOS) app for https://dev.to website built with SwiftUI and Composable architecture
+DEV is an unofficial multiplatform (iOS and macOS) app for https://dev.to website built with SwiftUI and Composable architecture
 
 ## 🧐 Why am I building this?
 
