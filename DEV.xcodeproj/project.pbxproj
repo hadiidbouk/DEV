@@ -21,7 +21,26 @@
 		FAABEF42260929B000753714 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF3C2609297F00753714 /* AppCore.swift */; };
 		FAABEF45260929B500753714 /* FeedCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF222609276900753714 /* FeedCore.swift */; };
 		FAABEF48260929B800753714 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF362609292800753714 /* FeedView.swift */; };
+		FAABEF67260938E700753714 /* DEViOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF66260938E700753714 /* DEViOSTests.swift */; };
+		FAABEF78260938F900753714 /* DEVmacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF77260938F900753714 /* DEVmacOSTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAABEF69260938E700753714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAABEEF72609257D00753714 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAABEF022609257E00753714;
+			remoteInfo = "DEV (iOS)";
+		};
+		FAABEF7A260938F900753714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAABEEF72609257D00753714 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAABEF0A2609257E00753714;
+			remoteInfo = "DEV (macOS)";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FAABEEFC2609257D00753714 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -35,6 +54,12 @@
 		FAABEF222609276900753714 /* FeedCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCore.swift; sourceTree = "<group>"; };
 		FAABEF362609292800753714 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		FAABEF3C2609297F00753714 /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		FAABEF64260938E700753714 /* DEViOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEViOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAABEF66260938E700753714 /* DEViOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEViOSTests.swift; sourceTree = "<group>"; };
+		FAABEF68260938E700753714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAABEF75260938F900753714 /* DEVmacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEVmacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAABEF77260938F900753714 /* DEVmacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEVmacOSTests.swift; sourceTree = "<group>"; };
+		FAABEF79260938F900753714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAABEF61260938E700753714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAABEF72260938F900753714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +102,8 @@
 				FAABEEFB2609257D00753714 /* Shared */,
 				FAABEF052609257E00753714 /* iOS */,
 				FAABEF0C2609257E00753714 /* macOS */,
+				FAABEF65260938E700753714 /* DEViOSTests */,
+				FAABEF76260938F900753714 /* DEVmacOSTests */,
 				FAABEF042609257E00753714 /* Products */,
 				FAABEF2B2609285D00753714 /* Frameworks */,
 			);
@@ -83,6 +124,8 @@
 			children = (
 				FAABEF032609257E00753714 /* DEV.app */,
 				FAABEF0B2609257E00753714 /* DEV.app */,
+				FAABEF64260938E700753714 /* DEViOSTests.xctest */,
+				FAABEF75260938F900753714 /* DEVmacOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +181,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FAABEF65260938E700753714 /* DEViOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAABEF66260938E700753714 /* DEViOSTests.swift */,
+				FAABEF68260938E700753714 /* Info.plist */,
+			);
+			path = DEViOSTests;
+			sourceTree = "<group>";
+		};
+		FAABEF76260938F900753714 /* DEVmacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAABEF77260938F900753714 /* DEVmacOSTests.swift */,
+				FAABEF79260938F900753714 /* Info.plist */,
+			);
+			path = DEVmacOSTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,6 +242,42 @@
 			productReference = FAABEF0B2609257E00753714 /* DEV.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FAABEF63260938E700753714 /* DEViOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAABEF6D260938E700753714 /* Build configuration list for PBXNativeTarget "DEViOSTests" */;
+			buildPhases = (
+				FAABEF60260938E700753714 /* Sources */,
+				FAABEF61260938E700753714 /* Frameworks */,
+				FAABEF62260938E700753714 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAABEF6A260938E700753714 /* PBXTargetDependency */,
+			);
+			name = DEViOSTests;
+			productName = DEViOSTests;
+			productReference = FAABEF64260938E700753714 /* DEViOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAABEF74260938F900753714 /* DEVmacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAABEF7C260938F900753714 /* Build configuration list for PBXNativeTarget "DEVmacOSTests" */;
+			buildPhases = (
+				FAABEF71260938F900753714 /* Sources */,
+				FAABEF72260938F900753714 /* Frameworks */,
+				FAABEF73260938F900753714 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAABEF7B260938F900753714 /* PBXTargetDependency */,
+			);
+			name = DEVmacOSTests;
+			productName = DEVmacOSTests;
+			productReference = FAABEF75260938F900753714 /* DEVmacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +292,14 @@
 					};
 					FAABEF0A2609257E00753714 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					FAABEF63260938E700753714 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FAABEF022609257E00753714;
+					};
+					FAABEF74260938F900753714 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FAABEF0A2609257E00753714;
 					};
 				};
 			};
@@ -216,6 +321,8 @@
 			targets = (
 				FAABEF022609257E00753714 /* DEV (iOS) */,
 				FAABEF0A2609257E00753714 /* DEV (macOS) */,
+				FAABEF63260938E700753714 /* DEViOSTests */,
+				FAABEF74260938F900753714 /* DEVmacOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +341,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF142609257E00753714 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAABEF62260938E700753714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAABEF73260938F900753714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +385,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAABEF60260938E700753714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAABEF67260938E700753714 /* DEViOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAABEF71260938F900753714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAABEF78260938F900753714 /* DEVmacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAABEF6A260938E700753714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAABEF022609257E00753714 /* DEV (iOS) */;
+			targetProxy = FAABEF69260938E700753714 /* PBXContainerItemProxy */;
+		};
+		FAABEF7B260938F900753714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAABEF0A2609257E00753714 /* DEV (macOS) */;
+			targetProxy = FAABEF7A260938F900753714 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FAABEF152609257E00753714 /* Debug */ = {
@@ -471,6 +621,95 @@
 			};
 			name = Release;
 		};
+		FAABEF6B260938E700753714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				INFOPLIST_FILE = DEViOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEViOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEV.app/DEV";
+			};
+			name = Debug;
+		};
+		FAABEF6C260938E700753714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				INFOPLIST_FILE = DEViOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEViOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEV.app/DEV";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAABEF7D260938F900753714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEVmacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEV.app/Contents/MacOS/DEV";
+			};
+			name = Debug;
+		};
+		FAABEF7E260938F900753714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEVmacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEV.app/Contents/MacOS/DEV";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -497,6 +736,24 @@
 			buildConfigurations = (
 				FAABEF1B2609257E00753714 /* Debug */,
 				FAABEF1C2609257E00753714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAABEF6D260938E700753714 /* Build configuration list for PBXNativeTarget "DEViOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAABEF6B260938E700753714 /* Debug */,
+				FAABEF6C260938E700753714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAABEF7C260938F900753714 /* Build configuration list for PBXNativeTarget "DEVmacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAABEF7D260938F900753714 /* Debug */,
+				FAABEF7E260938F900753714 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
