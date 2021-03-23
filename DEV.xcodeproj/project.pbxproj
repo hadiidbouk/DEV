@@ -161,6 +161,7 @@
 				FAABEEFF2609257E00753714 /* Sources */,
 				FAABEF002609257E00753714 /* Frameworks */,
 				FAABEF012609257E00753714 /* Resources */,
+				FAABEF8D2609EA2500753714 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -178,6 +179,7 @@
 				FAABEF072609257E00753714 /* Sources */,
 				FAABEF082609257E00753714 /* Frameworks */,
 				FAABEF092609257E00753714 /* Resources */,
+				FAABEF8E2609EA4800753714 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -302,6 +304,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAABEF8D2609EA2500753714 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    # Relative path from the .xcodeproj which contains this script\n    swiftlint lint --config ./.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+		FAABEF8E2609EA4800753714 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    # Relative path from the .xcodeproj which contains this script\n    swiftlint lint --config ./.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAABEEFF2609257E00753714 /* Sources */ = {
