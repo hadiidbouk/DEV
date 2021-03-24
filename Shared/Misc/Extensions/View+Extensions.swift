@@ -8,19 +8,19 @@
 import SwiftUI
 
 extension View {
-    @ViewBuilder func only(on platform: Platform) -> some View {
+    @ViewBuilder func on<Content: View>(_ platform: Platform, transform: (Self) -> Content) -> some View {
         switch platform {
         case .iOS:
             #if os(iOS)
-                self
+                transform(self)
             #else
-                EmptyView()
+                self
             #endif
         case .macOS:
             #if os(macOS)
-                self
+                transform(self)
             #else
-                EmptyView()
+                self
             #endif
         }
     }
