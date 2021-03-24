@@ -1,6 +1,6 @@
 //
 //  Theme.swift
-//  DEV (iOS)
+//  Shared
 //
 //  Created by Hadi on 23/03/2021.
 //

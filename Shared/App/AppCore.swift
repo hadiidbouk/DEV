@@ -1,6 +1,6 @@
 //
 //  AppCore.swift
-//  DEV (iOS)
+//  Shared
 //
 //  Created by Hadi on 22/03/2021.
 //
