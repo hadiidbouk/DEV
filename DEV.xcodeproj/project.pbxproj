@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA08DA49260B6FCF00317FC8 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABEFAC260A0C0F00753714 /* Colors.json */; };
 		FAABEF0F2609257E00753714 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEEFC2609257D00753714 /* App.swift */; };
 		FAABEF102609257E00753714 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEEFC2609257D00753714 /* App.swift */; };
 		FAABEF112609257E00753714 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEEFD2609257D00753714 /* AppView.swift */; };
@@ -367,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF142609257E00753714 /* Assets.xcassets in Resources */,
+				FA08DA49260B6FCF00317FC8 /* Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
