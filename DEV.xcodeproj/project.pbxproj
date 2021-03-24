@@ -23,6 +23,8 @@
 		FAABEF48260929B800753714 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF362609292800753714 /* FeedView.swift */; };
 		FAABEF67260938E700753714 /* DEViOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF66260938E700753714 /* DEViOSTests.swift */; };
 		FAABEF78260938F900753714 /* DEVmacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF77260938F900753714 /* DEVmacOSTests.swift */; };
+		FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
+		FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		FAABEF75260938F900753714 /* DEVmacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEVmacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAABEF77260938F900753714 /* DEVmacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEVmacOSTests.swift; sourceTree = "<group>"; };
 		FAABEF79260938F900753714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePropertyWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 				FAABEF20260926F600753714 /* App */,
 				FAABEF1F260926ED00753714 /* Feed */,
 				FAABEF212609270500753714 /* Resources */,
+				FAABEFC1260A347500753714 /* Utils */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -197,6 +201,14 @@
 				FAABEF79260938F900753714 /* Info.plist */,
 			);
 			path = DEVmacOSTests;
+			sourceTree = "<group>";
+		};
+		FAABEFC1260A347500753714 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +422,7 @@
 				FAABEF112609257E00753714 /* AppView.swift in Sources */,
 				FAABEF0F2609257E00753714 /* App.swift in Sources */,
 				FAABEF232609276900753714 /* FeedCore.swift in Sources */,
+				FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */,
 				FAABEF3D2609297F00753714 /* AppCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +433,7 @@
 			files = (
 				FAABEF48260929B800753714 /* FeedView.swift in Sources */,
 				FAABEF42260929B000753714 /* AppCore.swift in Sources */,
+				FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
 				FAABEF45260929B500753714 /* FeedCore.swift in Sources */,
 				FAABEF102609257E00753714 /* App.swift in Sources */,
