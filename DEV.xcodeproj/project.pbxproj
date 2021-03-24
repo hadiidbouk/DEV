@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA08DA49260B6FCF00317FC8 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABEFAC260A0C0F00753714 /* Colors.json */; };
 		FAABEF0F2609257E00753714 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEEFC2609257D00753714 /* App.swift */; };
 		FAABEF102609257E00753714 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEEFC2609257D00753714 /* App.swift */; };
 		FAABEF112609257E00753714 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEEFD2609257D00753714 /* AppView.swift */; };
@@ -23,6 +24,13 @@
 		FAABEF48260929B800753714 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF362609292800753714 /* FeedView.swift */; };
 		FAABEF67260938E700753714 /* DEViOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF66260938E700753714 /* DEViOSTests.swift */; };
 		FAABEF78260938F900753714 /* DEVmacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF77260938F900753714 /* DEVmacOSTests.swift */; };
+		FAABEFAD260A0C0F00753714 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABEFAC260A0C0F00753714 /* Colors.json */; };
+		FAABEFB3260A0E2900753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
+		FAABEFBC260A32A700753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
+		FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
+		FAABEFD0260A5A1700753714 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFCF260A5A1700753714 /* AppConfig.swift */; };
+		FAABEFD5260B2B3C00753714 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFCF260A5A1700753714 /* AppConfig.swift */; };
+		FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +68,10 @@
 		FAABEF75260938F900753714 /* DEVmacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEVmacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAABEF77260938F900753714 /* DEVmacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEVmacOSTests.swift; sourceTree = "<group>"; };
 		FAABEF79260938F900753714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAABEFAC260A0C0F00753714 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
+		FAABEFB2260A0E2900753714 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePropertyWrapper.swift; sourceTree = "<group>"; };
+		FAABEFCF260A5A1700753714 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,7 @@
 				FAABEF20260926F600753714 /* App */,
 				FAABEF1F260926ED00753714 /* Feed */,
 				FAABEF212609270500753714 /* Resources */,
+				FAABEFC1260A347500753714 /* Utils */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -162,6 +175,7 @@
 				FAABEEFC2609257D00753714 /* App.swift */,
 				FAABEEFD2609257D00753714 /* AppView.swift */,
 				FAABEF3C2609297F00753714 /* AppCore.swift */,
+				FAABEFCF260A5A1700753714 /* AppConfig.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -170,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				FAABEEFE2609257E00753714 /* Assets.xcassets */,
+				FAABEFAC260A0C0F00753714 /* Colors.json */,
+				FAABEFB2260A0E2900753714 /* Theme.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -197,6 +213,14 @@
 				FAABEF79260938F900753714 /* Info.plist */,
 			);
 			path = DEVmacOSTests;
+			sourceTree = "<group>";
+		};
+		FAABEFC1260A347500753714 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF132609257E00753714 /* Assets.xcassets in Resources */,
+				FAABEFAD260A0C0F00753714 /* Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF142609257E00753714 /* Assets.xcassets in Resources */,
+				FA08DA49260B6FCF00317FC8 /* Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +433,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF372609292800753714 /* FeedView.swift in Sources */,
+				FAABEFD0260A5A1700753714 /* AppConfig.swift in Sources */,
 				FAABEF112609257E00753714 /* AppView.swift in Sources */,
 				FAABEF0F2609257E00753714 /* App.swift in Sources */,
 				FAABEF232609276900753714 /* FeedCore.swift in Sources */,
+				FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */,
 				FAABEF3D2609297F00753714 /* AppCore.swift in Sources */,
+				FAABEFB3260A0E2900753714 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +449,10 @@
 			files = (
 				FAABEF48260929B800753714 /* FeedView.swift in Sources */,
 				FAABEF42260929B000753714 /* AppCore.swift in Sources */,
+				FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
+				FAABEFD5260B2B3C00753714 /* AppConfig.swift in Sources */,
+				FAABEFBC260A32A700753714 /* Theme.swift in Sources */,
 				FAABEF45260929B500753714 /* FeedCore.swift in Sources */,
 				FAABEF102609257E00753714 /* App.swift in Sources */,
 			);
@@ -574,17 +606,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEV;
+				PRODUCT_BUNDLE_IDENTIFIER = to.dev.hadiidbouk;
 				PRODUCT_NAME = DEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -596,17 +631,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEV;
+				PRODUCT_BUNDLE_IDENTIFIER = to.dev.hadiidbouk;
 				PRODUCT_NAME = DEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -620,9 +658,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -633,6 +672,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEV;
 				PRODUCT_NAME = DEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -644,9 +684,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -657,6 +698,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEV;
 				PRODUCT_NAME = DEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -666,8 +708,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				INFOPLIST_FILE = DEViOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -677,6 +721,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEViOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -688,8 +734,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				INFOPLIST_FILE = DEViOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -699,6 +747,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEViOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -711,9 +761,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -723,6 +774,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEVmacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEV.app/Contents/MacOS/DEV";
@@ -733,9 +785,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 52GGBJS2G2;
+				DEVELOPMENT_TEAM = YL77PVMV33;
 				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -745,6 +798,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEVmacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DEV.app/Contents/MacOS/DEV";
