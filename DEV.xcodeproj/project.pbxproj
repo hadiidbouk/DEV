@@ -27,6 +27,8 @@
 		FAABEFB3260A0E2900753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
 		FAABEFBC260A32A700753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
 		FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
+		FAABEFD0260A5A1700753714 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFCF260A5A1700753714 /* AppConfig.swift */; };
+		FAABEFD5260B2B3C00753714 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFCF260A5A1700753714 /* AppConfig.swift */; };
 		FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,7 @@
 		FAABEFAC260A0C0F00753714 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
 		FAABEFB2260A0E2900753714 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePropertyWrapper.swift; sourceTree = "<group>"; };
+		FAABEFCF260A5A1700753714 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,7 @@
 				FAABEEFC2609257D00753714 /* App.swift */,
 				FAABEEFD2609257D00753714 /* AppView.swift */,
 				FAABEF3C2609297F00753714 /* AppCore.swift */,
+				FAABEFCF260A5A1700753714 /* AppConfig.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -427,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF372609292800753714 /* FeedView.swift in Sources */,
+				FAABEFD0260A5A1700753714 /* AppConfig.swift in Sources */,
 				FAABEF112609257E00753714 /* AppView.swift in Sources */,
 				FAABEF0F2609257E00753714 /* App.swift in Sources */,
 				FAABEF232609276900753714 /* FeedCore.swift in Sources */,
@@ -444,6 +449,7 @@
 				FAABEF42260929B000753714 /* AppCore.swift in Sources */,
 				FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
+				FAABEFD5260B2B3C00753714 /* AppConfig.swift in Sources */,
 				FAABEFBC260A32A700753714 /* Theme.swift in Sources */,
 				FAABEF45260929B500753714 /* FeedCore.swift in Sources */,
 				FAABEF102609257E00753714 /* App.swift in Sources */,
