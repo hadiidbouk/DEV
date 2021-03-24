@@ -23,6 +23,9 @@
 		FAABEF48260929B800753714 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF362609292800753714 /* FeedView.swift */; };
 		FAABEF67260938E700753714 /* DEViOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF66260938E700753714 /* DEViOSTests.swift */; };
 		FAABEF78260938F900753714 /* DEVmacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF77260938F900753714 /* DEVmacOSTests.swift */; };
+		FAABEFAD260A0C0F00753714 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABEFAC260A0C0F00753714 /* Colors.json */; };
+		FAABEFB3260A0E2900753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
+		FAABEFBC260A32A700753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
 		FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
 		FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,8 @@
 		FAABEF75260938F900753714 /* DEVmacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEVmacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAABEF77260938F900753714 /* DEVmacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEVmacOSTests.swift; sourceTree = "<group>"; };
 		FAABEF79260938F900753714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAABEFAC260A0C0F00753714 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
+		FAABEFB2260A0E2900753714 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePropertyWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				FAABEEFE2609257E00753714 /* Assets.xcassets */,
+				FAABEFAC260A0C0F00753714 /* Colors.json */,
+				FAABEFB2260A0E2900753714 /* Theme.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -347,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF132609257E00753714 /* Assets.xcassets in Resources */,
+				FAABEFAD260A0C0F00753714 /* Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +432,7 @@
 				FAABEF232609276900753714 /* FeedCore.swift in Sources */,
 				FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */,
 				FAABEF3D2609297F00753714 /* AppCore.swift in Sources */,
+				FAABEFB3260A0E2900753714 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +444,7 @@
 				FAABEF42260929B000753714 /* AppCore.swift in Sources */,
 				FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
+				FAABEFBC260A32A700753714 /* Theme.swift in Sources */,
 				FAABEF45260929B500753714 /* FeedCore.swift in Sources */,
 				FAABEF102609257E00753714 /* App.swift in Sources */,
 			);

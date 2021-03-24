@@ -1,0 +1,17 @@
+{
+    "light": {
+        "background": "#EEF0F1",
+        "primary": "#FFFFFF",
+        "accent": "#3B49DF"
+    },
+    "dark": {
+        "background": "#0D1219",
+        "primary": "#1A2434",
+        "accent": "#7B78FF"
+    },
+    "pink": {
+        "background": "#FFF7F9",
+        "primary": "#FFFFFF",
+        "accent": "#FF6C9B"
+    }
+}
