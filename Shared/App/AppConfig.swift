@@ -11,7 +11,7 @@ import Combine
 final class AppConfig: ObservableObject {
     let objectWillChange = PassthroughSubject<Void, Never>()
 
-    @StorageCodable(key: "theme", defaultValue: .light)
+    @StorageCodable(key: "theme", defaultValue: .default)
     var theme: Theme
 
     private var didChangeCancellable: AnyCancellable?

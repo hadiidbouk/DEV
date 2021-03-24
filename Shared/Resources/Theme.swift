@@ -11,13 +11,23 @@ enum Theme: String, CaseIterable, Codable {
     case light
     case dark
     case pink
+    case `default`
 
     fileprivate var colors: Colors {
         switch self {
-        case .light: return themesColors.light
-        case .dark:  return themesColors.dark
-        case .pink:  return themesColors.pink
+        case .light:    return themesColors.light
+        case .dark:     return themesColors.dark
+        case .pink:     return themesColors.pink
+        case .default:  return isDarkMode ? themesColors.dark : themesColors.light
         }
+    }
+
+    private var isDarkMode: Bool {
+        #if os(macOS)
+            return NSAppearance.current.name == .darkAqua
+        #else
+            return UITraitCollection.current.userInterfaceStyle == .dark
+        #endif
     }
 }
 
