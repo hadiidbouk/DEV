@@ -4,7 +4,7 @@
 
 DEV is an unofficial multiplatform (iOS and macOS) app for https://dev.to website built with SwiftUI and Composable architecture
 
-## 🧐 Why am I building this?
+## 🧐 Why I am building this?
 
 1. Having fun with SwiftUI.
 1. Working with Composable Architecture.
