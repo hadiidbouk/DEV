@@ -31,8 +31,26 @@ struct AppView: View {
             #endif
 
             WithViewStore(store) { viewStore in
-                viewStore.selectedModule.view(store)
+                let moduleView = viewStore.selectedModule.view(store)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.background)
+
+                #if os(iOS)
+                moduleView
+                    .navigationTitle("")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .applyBackground()
+                #else
+                moduleView
+                #endif
             }
+        }
+        .onAppear {
+            #if os(iOS)
+            let newAppearance = UINavigationBarAppearance()
+            newAppearance.backgroundColor = UIColor(Color.background)
+            UINavigationBar.appearance().standardAppearance = newAppearance
+            #endif
         }
     }
 }
