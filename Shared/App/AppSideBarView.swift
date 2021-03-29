@@ -19,8 +19,6 @@ extension AppSideBarView {
 }
 
 struct AppSideBarView: View {
-    @EnvironmentObject var config: AppConfig
-
     let store: Store<AppState, AppAction>
 
     var body: some View {
@@ -39,7 +37,8 @@ struct AppSideBarView: View {
                 }
             #elseif os(iOS)
             sideBarView
-                .navigationBarHidden(true)
+                .navigationTitle("")
+                .navigationBarTitleDisplayMode(.inline)
             #endif
         }
     }
@@ -86,6 +85,7 @@ private extension AppSideBarView {
                 }
             }
             .padding(.top, Layout.topPadding)
+            .applyBackground()
         }
     }
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA08DA49260B6FCF00317FC8 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABEFAC260A0C0F00753714 /* Colors.json */; };
 		FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
 		FAA7A088260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
@@ -31,12 +30,7 @@
 		FAABEF48260929B800753714 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF362609292800753714 /* HomeView.swift */; };
 		FAABEF67260938E700753714 /* DEViOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF66260938E700753714 /* DEViOSTests.swift */; };
 		FAABEF78260938F900753714 /* DEVmacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEF77260938F900753714 /* DEVmacOSTests.swift */; };
-		FAABEFAD260A0C0F00753714 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABEFAC260A0C0F00753714 /* Colors.json */; };
-		FAABEFB3260A0E2900753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
-		FAABEFBC260A32A700753714 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFB2260A0E2900753714 /* Theme.swift */; };
 		FAABEFC3260A349300753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
-		FAABEFD0260A5A1700753714 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFCF260A5A1700753714 /* AppConfig.swift */; };
-		FAABEFD5260B2B3C00753714 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFCF260A5A1700753714 /* AppConfig.swift */; };
 		FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
 		FAB43F63260D3CD2005D2D73 /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43F62260D3CD2005D2D73 /* ReadingListView.swift */; };
 		FAB43F64260D3CD2005D2D73 /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43F62260D3CD2005D2D73 /* ReadingListView.swift */; };
@@ -68,6 +62,8 @@
 		FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */; };
 		FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74F42611E00D008269BB /* Layout+Extensions.swift */; };
 		FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74EE2611E000008269BB /* Layout+Extensions.swift */; };
+		FAFB75102611E9B5008269BB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB750F2611E9B5008269BB /* Color+Extensions.swift */; };
+		FAFB75112611E9B5008269BB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB750F2611E9B5008269BB /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,10 +105,7 @@
 		FAABEF75260938F900753714 /* DEVmacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEVmacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAABEF77260938F900753714 /* DEVmacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEVmacOSTests.swift; sourceTree = "<group>"; };
 		FAABEF79260938F900753714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAABEFAC260A0C0F00753714 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
-		FAABEFB2260A0E2900753714 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePropertyWrapper.swift; sourceTree = "<group>"; };
-		FAABEFCF260A5A1700753714 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		FAB43F62260D3CD2005D2D73 /* ReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListView.swift; sourceTree = "<group>"; };
 		FABBB7D8260FBEED00AB95FC /* Cursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
 		FABBB7E4260FC10C00AB95FC /* ListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsView.swift; sourceTree = "<group>"; };
@@ -129,6 +122,7 @@
 		FABBB88626111C6300AB95FC /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		FAFB74EE2611E000008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
 		FAFB74F42611E00D008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
+		FAFB750F2611E9B5008269BB /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,7 +269,6 @@
 				FAABEEFC2609257D00753714 /* App.swift */,
 				FAABEEFD2609257D00753714 /* AppView.swift */,
 				FAABEF3C2609297F00753714 /* AppCore.swift */,
-				FAABEFCF260A5A1700753714 /* AppConfig.swift */,
 				FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */,
 			);
 			path = App;
@@ -285,8 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				FAABEEFE2609257E00753714 /* Assets.xcassets */,
-				FAABEFAC260A0C0F00753714 /* Colors.json */,
-				FAABEFB2260A0E2900753714 /* Theme.swift */,
+				FAFB750F2611E9B5008269BB /* Color+Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -564,7 +556,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF132609257E00753714 /* Assets.xcassets in Resources */,
-				FAABEFAD260A0C0F00753714 /* Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +564,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF142609257E00753714 /* Assets.xcassets in Resources */,
-				FA08DA49260B6FCF00317FC8 /* Colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,7 +634,7 @@
 				FAABEF372609292800753714 /* HomeView.swift in Sources */,
 				FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */,
 				FABBB82B2610AACA00AB95FC /* TagsView.swift in Sources */,
-				FAABEFD0260A5A1700753714 /* AppConfig.swift in Sources */,
+				FAFB75102611E9B5008269BB /* Color+Extensions.swift in Sources */,
 				FABBB7E5260FC10C00AB95FC /* ListingsView.swift in Sources */,
 				FABBB87F26111BE000AB95FC /* TermsOfUseView.swift in Sources */,
 				FAA7A0A7260BABAC007F48A1 /* Module.swift in Sources */,
@@ -662,7 +652,6 @@
 				FAABEF3D2609297F00753714 /* AppCore.swift in Sources */,
 				FABBB813260FEE6700AB95FC /* PodcastsView.swift in Sources */,
 				FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */,
-				FAABEFB3260A0E2900753714 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +661,7 @@
 			files = (
 				FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */,
 				FAABEF48260929B800753714 /* HomeView.swift in Sources */,
+				FAFB75112611E9B5008269BB /* Color+Extensions.swift in Sources */,
 				FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */,
 				FABBB8502611175400AB95FC /* DEVShopView.swift in Sources */,
 				FABBB87826111A0D00AB95FC /* PrivacyPolicyView.swift in Sources */,
@@ -687,12 +677,10 @@
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
 				FAA7A094260B9B8A007F48A1 /* AppSideBarView.swift in Sources */,
 				FABBB8702611191800AB95FC /* AboutView.swift in Sources */,
-				FAABEFD5260B2B3C00753714 /* AppConfig.swift in Sources */,
 				FABBB88826111C6300AB95FC /* ContactView.swift in Sources */,
 				FABBB8202610AA0400AB95FC /* VideosView.swift in Sources */,
 				FABBB814260FEE6700AB95FC /* PodcastsView.swift in Sources */,
 				FABBB7DA260FBEED00AB95FC /* Cursor.swift in Sources */,
-				FAABEFBC260A32A700753714 /* Theme.swift in Sources */,
 				FAABEF45260929B500753714 /* HomeCore.swift in Sources */,
 				FAA7A08E260B9A54007F48A1 /* View+Extensions.swift in Sources */,
 				FAABEF102609257E00753714 /* App.swift in Sources */,
@@ -847,14 +835,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accent;
 				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -872,14 +860,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accent;
 				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -898,7 +886,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accent;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -911,7 +899,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEV;
 				PRODUCT_NAME = DEV;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -924,7 +912,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accent;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -937,7 +925,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEV;
 				PRODUCT_NAME = DEV;
 				PROVISIONING_PROFILE_SPECIFIER = "";

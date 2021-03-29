@@ -8,8 +8,6 @@
 import ComposableArchitecture
 import SwiftUI
 
-var config = AppConfig()
-
 @main
 struct DEVApp: App {
     var body: some Scene {
@@ -18,8 +16,6 @@ struct DEVApp: App {
                               reducer: appReducer,
                               environment: AppEnvironment(homeEnvironment: .init()))
             AppView(store: store)
-                .environmentObject(config)
-                .preferredColorScheme(.dark)
         }
 
         #if os(macOS)

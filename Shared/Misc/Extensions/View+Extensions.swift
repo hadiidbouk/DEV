@@ -25,3 +25,13 @@ extension View {
         }
     }
 }
+
+extension View {
+    func applyBackground() -> some View {
+        ZStack {
+            Color.background
+                .edgesIgnoringSafeArea(.all)
+            self
+        }
+    }
+}
