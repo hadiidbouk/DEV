@@ -12,6 +12,7 @@
 		FAA7A088260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FAA7A08E260B9A54007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
+		FAA7A094260B9B8A007F48A1 /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */; };
 		FAA7A0A7260BABAC007F48A1 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A0A6260BABAC007F48A1 /* Module.swift */; };
 		FAA7A0A8260BABAC007F48A1 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A0A6260BABAC007F48A1 /* Module.swift */; };
 		FAABEF0F2609257E00753714 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEEFC2609257D00753714 /* App.swift */; };
@@ -39,6 +40,7 @@
 		FAABEFDA260B2B5600753714 /* StoragePropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABEFC2260A349300753714 /* StoragePropertyWrapper.swift */; };
 		FAB43F63260D3CD2005D2D73 /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43F62260D3CD2005D2D73 /* ReadingListView.swift */; };
 		FAB43F64260D3CD2005D2D73 /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB43F62260D3CD2005D2D73 /* ReadingListView.swift */; };
+		FABBB7DA260FBEED00AB95FC /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB7D8260FBEED00AB95FC /* Cursor.swift */; };
 		FABBB7E5260FC10C00AB95FC /* ListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB7E4260FC10C00AB95FC /* ListingsView.swift */; };
 		FABBB7E6260FC10C00AB95FC /* ListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB7E4260FC10C00AB95FC /* ListingsView.swift */; };
 		FABBB813260FEE6700AB95FC /* PodcastsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB812260FEE6700AB95FC /* PodcastsView.swift */; };
@@ -63,6 +65,9 @@
 		FABBB88026111BE000AB95FC /* TermsOfUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB87E26111BE000AB95FC /* TermsOfUseView.swift */; };
 		FABBB88726111C6300AB95FC /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB88626111C6300AB95FC /* ContactView.swift */; };
 		FABBB88826111C6300AB95FC /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB88626111C6300AB95FC /* ContactView.swift */; };
+		FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */; };
+		FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74F42611E00D008269BB /* Layout+Extensions.swift */; };
+		FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74EE2611E000008269BB /* Layout+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,7 @@
 /* Begin PBXFileReference section */
 		FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		FAA7A087260B98B7007F48A1 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSideBarView.swift; sourceTree = "<group>"; };
 		FAA7A0A6260BABAC007F48A1 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		FAABEEFC2609257D00753714 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		FAABEEFD2609257D00753714 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 		FABBB87626111A0D00AB95FC /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		FABBB87E26111BE000AB95FC /* TermsOfUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseView.swift; sourceTree = "<group>"; };
 		FABBB88626111C6300AB95FC /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		FAFB74EE2611E000008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
+		FAFB74F42611E00D008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				FAABEF062609257E00753714 /* Info.plist */,
+				FAFB74F42611E00D008269BB /* Layout+Extensions.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -245,6 +254,8 @@
 			children = (
 				FAABEF0D2609257E00753714 /* Info.plist */,
 				FAABEF0E2609257E00753714 /* macOS.entitlements */,
+				FABBB7D8260FBEED00AB95FC /* Cursor.swift */,
+				FAFB74EE2611E000008269BB /* Layout+Extensions.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -265,6 +276,7 @@
 				FAABEEFD2609257D00753714 /* AppView.swift */,
 				FAABEF3C2609297F00753714 /* AppCore.swift */,
 				FAABEFCF260A5A1700753714 /* AppConfig.swift */,
+				FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -627,6 +639,7 @@
 			files = (
 				FAA7A088260B98B7007F48A1 /* Platform.swift in Sources */,
 				FABBB86F2611191800AB95FC /* AboutView.swift in Sources */,
+				FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */,
 				FABBB84F2611175400AB95FC /* DEVShopView.swift in Sources */,
 				FAABEF372609292800753714 /* HomeView.swift in Sources */,
 				FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */,
@@ -648,6 +661,7 @@
 				FABBB81F2610AA0300AB95FC /* VideosView.swift in Sources */,
 				FAABEF3D2609297F00753714 /* AppCore.swift in Sources */,
 				FABBB813260FEE6700AB95FC /* PodcastsView.swift in Sources */,
+				FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */,
 				FAABEFB3260A0E2900753714 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,6 +672,7 @@
 			files = (
 				FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */,
 				FAABEF48260929B800753714 /* HomeView.swift in Sources */,
+				FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */,
 				FABBB8502611175400AB95FC /* DEVShopView.swift in Sources */,
 				FABBB87826111A0D00AB95FC /* PrivacyPolicyView.swift in Sources */,
 				FABBB8382610AC5600AB95FC /* CodeOfConductView.swift in Sources */,
@@ -670,11 +685,13 @@
 				FAA7A0A8260BABAC007F48A1 /* Module.swift in Sources */,
 				FAB43F64260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
+				FAA7A094260B9B8A007F48A1 /* AppSideBarView.swift in Sources */,
 				FABBB8702611191800AB95FC /* AboutView.swift in Sources */,
 				FAABEFD5260B2B3C00753714 /* AppConfig.swift in Sources */,
 				FABBB88826111C6300AB95FC /* ContactView.swift in Sources */,
 				FABBB8202610AA0400AB95FC /* VideosView.swift in Sources */,
 				FABBB814260FEE6700AB95FC /* PodcastsView.swift in Sources */,
+				FABBB7DA260FBEED00AB95FC /* Cursor.swift in Sources */,
 				FAABEFBC260A32A700753714 /* Theme.swift in Sources */,
 				FAABEF45260929B500753714 /* HomeCore.swift in Sources */,
 				FAA7A08E260B9A54007F48A1 /* View+Extensions.swift in Sources */,
@@ -837,7 +854,7 @@
 				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -862,7 +879,7 @@
 				DEVELOPMENT_TEAM = YL77PVMV33;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
