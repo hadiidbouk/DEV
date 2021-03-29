@@ -1,6 +1,6 @@
 //
 //  Theme.swift
-//  DEV (iOS)
+//  Shared
 //
 //  Created by Hadi on 23/03/2021.
 //
@@ -35,6 +35,8 @@ extension Color {
     static var background: Color { config.theme.colors.background }
     static var primary: Color { config.theme.colors.primary }
     static var accent: Color { config.theme.colors.accent }
+    static var primaryText: Color { config.theme.colors.primaryText }
+    static var secondaryText: Color { config.theme.colors.secondaryText }
 }
 
 // MARK: - private section
@@ -62,9 +64,11 @@ private struct Colors: Decodable {
     private(set) var background: Color = .clear
     private(set) var primary: Color = .clear
     private(set) var accent: Color = .clear
+    private(set) var primaryText: Color = .clear
+    private(set) var secondaryText: Color = .clear
 
     enum CodingKeys: String, CodingKey {
-        case background, primary, accent
+        case background, primary, accent, primaryText, secondaryText
     }
 
     init(from decoder: Decoder) throws {
@@ -73,6 +77,8 @@ private struct Colors: Decodable {
             background = try decodeColor(from: container, with: .background)
             primary = try decodeColor(from: container, with: .primary)
             accent = try decodeColor(from: container, with: .accent)
+            primaryText = try decodeColor(from: container, with: .primaryText)
+            secondaryText = try decodeColor(from: container, with: .secondaryText)
         } catch let error {
             fatalError(error.localizedDescription)
         }
