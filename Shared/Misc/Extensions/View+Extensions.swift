@@ -35,4 +35,13 @@ extension View {
         }
     }
 
+    func applyBorder(cornerRadius: CGFloat = 5,
+                     color: Color = .border,
+                     lineWidth: CGFloat = 1) -> some View {
+        self
+        .overlay(
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(color, lineWidth: lineWidth)
+        )
+    }
 }
