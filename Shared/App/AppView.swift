@@ -16,34 +16,36 @@ struct AppView: View {
     let store: Store<AppState, AppAction>
 
     var body: some View {
+        let moduleView = WithViewStore(store) { viewStore in
+            let view = viewStore.selectedModule.view(store)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.background)
+
+            #if os(iOS)
+            view
+                .navigationTitle("")
+                .navigationBarTitleDisplayMode(.inline)
+                .applyBackground()
+            #else
+            view
+            #endif
+        }
+
         NavigationView {
 
             #if os(iOS)
             if horizontalSizeClass == .compact {
                 // iPhone
-                Color.red
+                moduleView
             } else {
                 // iPad
                 AppSideBarView(store: store)
+                moduleView
             }
             #else
             AppSideBarView(store: store)
+            view
             #endif
-
-            WithViewStore(store) { viewStore in
-                let moduleView = viewStore.selectedModule.view(store)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.background)
-
-                #if os(iOS)
-                moduleView
-                    .navigationTitle("")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .applyBackground()
-                #else
-                moduleView
-                #endif
-            }
         }
         .onAppear {
             #if os(iOS)
