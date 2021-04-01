@@ -44,7 +44,7 @@ struct AppView: View {
             }
             #else
             AppSideBarView(store: store)
-            view
+            moduleView
             #endif
         }
         .onAppear {
