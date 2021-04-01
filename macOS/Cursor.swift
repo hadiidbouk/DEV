@@ -8,9 +8,5 @@
 import SwiftUI
 
 func changeCursor(to cursor: NSCursor, _ inside: Bool) {
-    if inside {
-        cursor.push()
-    } else {
-        NSCursor.pop()
-    }
+    inside ? cursor.push() : NSCursor.pop()
 }
