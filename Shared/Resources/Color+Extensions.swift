@@ -13,4 +13,6 @@ extension Color {
     static let accent = Color("accent")
     static let primaryText = Color("primaryText")
     static let secondaryText = Color("secondaryText")
+    static let tertiaryText = Color("tertiaryText")
+    static let border = Color("border")
 }
