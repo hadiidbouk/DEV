@@ -9,7 +9,7 @@ DEV is an unofficial multiplatform (iOS, iPadOS, and macOS) app for https://dev.
 ## 🧐 Why I am building this?
 
 1. Having fun with SwiftUI.
-1. Working with Composable Architecture.
+1. Working with [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture).
 1. Developing a multiplatform application.
 1. Exploring Dev.to and its API.
 
