@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
+		FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA23D53626151F1500A00E36 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D53526151F1500A00E36 /* RoundedImageView.swift */; };
 		FA23D53726151F1500A00E36 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D53526151F1500A00E36 /* RoundedImageView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
@@ -88,6 +90,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		FA23D53526151F1500A00E36 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
@@ -168,6 +171,7 @@
 		FA23D5242615126400A00E36 /* Article */ = {
 			isa = PBXGroup;
 			children = (
+				FA23D5252615127D00A00E36 /* ArticleView.swift */,
 				FA317E0A261771BD00E8A660 /* TagListView.swift */,
 			);
 			path = Article;
@@ -655,6 +659,7 @@
 				FABBB7E5260FC10C00AB95FC /* ListingsView.swift in Sources */,
 				FABBB87F26111BE000AB95FC /* TermsOfUseView.swift in Sources */,
 				FAA7A0A7260BABAC007F48A1 /* Module.swift in Sources */,
+				FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */,
 				FAB43F63260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF112609257E00753714 /* AppView.swift in Sources */,
 				FAABEF0F2609257E00753714 /* App.swift in Sources */,
@@ -692,6 +697,7 @@
 				FAA7A0A8260BABAC007F48A1 /* Module.swift in Sources */,
 				FAB43F64260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
+				FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */,
 				FAD1082E2616160F00C7B684 /* TextButton.swift in Sources */,
 				FAA7A094260B9B8A007F48A1 /* AppSideBarView.swift in Sources */,
 				FABBB8702611191800AB95FC /* AboutView.swift in Sources */,
