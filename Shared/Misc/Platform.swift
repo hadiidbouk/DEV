@@ -24,4 +24,6 @@ enum Platform {
         #endif
 
     }()
+
+    static func `is`(_ platform: Platform) -> Bool { current == platform }
 }
