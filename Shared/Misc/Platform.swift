@@ -9,5 +9,6 @@ import Foundation
 
 enum Platform {
     case iOS
+    case iPadOS
     case macOS
 }
