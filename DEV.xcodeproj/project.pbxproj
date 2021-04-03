@@ -64,8 +64,8 @@
 		FABBB88726111C6300AB95FC /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB88626111C6300AB95FC /* ContactView.swift */; };
 		FABBB88826111C6300AB95FC /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB88626111C6300AB95FC /* ContactView.swift */; };
 		FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */; };
-		FAD1082D2616160F00C7B684 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1082C2616160F00C7B684 /* TextButton.swift */; };
-		FAD1082E2616160F00C7B684 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1082C2616160F00C7B684 /* TextButton.swift */; };
+		FADC1F632618F5F9009A129D /* DEVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC1F622618F5F9009A129D /* DEVButton.swift */; };
+		FADC1F642618F5F9009A129D /* DEVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC1F622618F5F9009A129D /* DEVButton.swift */; };
 		FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74F42611E00D008269BB /* Layout+Extensions.swift */; };
 		FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74EE2611E000008269BB /* Layout+Extensions.swift */; };
 		FAFB75102611E9B5008269BB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB750F2611E9B5008269BB /* Color+Extensions.swift */; };
@@ -128,7 +128,7 @@
 		FABBB87626111A0D00AB95FC /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		FABBB87E26111BE000AB95FC /* TermsOfUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseView.swift; sourceTree = "<group>"; };
 		FABBB88626111C6300AB95FC /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
-		FAD1082C2616160F00C7B684 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		FADC1F622618F5F9009A129D /* DEVButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEVButton.swift; sourceTree = "<group>"; };
 		FAFB74EE2611E000008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
 		FAFB74F42611E00D008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
 		FAFB750F2611E9B5008269BB /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FA23D53526151F1500A00E36 /* RoundedImageView.swift */,
-				FAD1082C2616160F00C7B684 /* TextButton.swift */,
+				FADC1F622618F5F9009A129D /* DEVButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -663,7 +663,7 @@
 				FAB43F63260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF112609257E00753714 /* AppView.swift in Sources */,
 				FAABEF0F2609257E00753714 /* App.swift in Sources */,
-				FAD1082D2616160F00C7B684 /* TextButton.swift in Sources */,
+				FADC1F632618F5F9009A129D /* DEVButton.swift in Sources */,
 				FABBB8632611182300AB95FC /* SponsorsView.swift in Sources */,
 				FAABEF232609276900753714 /* HomeCore.swift in Sources */,
 				FABBB8372610AC5600AB95FC /* CodeOfConductView.swift in Sources */,
@@ -697,8 +697,8 @@
 				FAA7A0A8260BABAC007F48A1 /* Module.swift in Sources */,
 				FAB43F64260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
+				FADC1F642618F5F9009A129D /* DEVButton.swift in Sources */,
 				FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */,
-				FAD1082E2616160F00C7B684 /* TextButton.swift in Sources */,
 				FAA7A094260B9B8A007F48A1 /* AppSideBarView.swift in Sources */,
 				FABBB8702611191800AB95FC /* AboutView.swift in Sources */,
 				FABBB88826111C6300AB95FC /* ContactView.swift in Sources */,

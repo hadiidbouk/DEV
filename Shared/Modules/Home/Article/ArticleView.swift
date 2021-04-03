@@ -64,15 +64,19 @@ private struct UserInfoView: View {
 
 private struct TitleView: View {
     var body: some View {
-        #if os(iOS)
-        Text("My favorite resources being a freelancer as a side hustle 💎")
-        .font(.system(size: Layout.titleFontSize, weight: .bold, design: .default))
-        #else
-        TextButton(text: "My favorite resources being a freelancer as a side hustle 💎") {
-            print("Pressed.")
-        }
-        .font(.system(size: Layout.titleFontSize, weight: .bold, design: .default))
-        #endif
+        let action = Platform.is(.macOS) ? {
+            // do Something
+        } : {}
+
+        DEVButton("My favorite resources being a freelancer as a side hustle 💎",
+                  config: {
+                    $0.forgroundColor = .primaryText
+                    $0.selectedForgroundColor = .accent
+                    $0.textFont = .system(size: Layout.titleFontSize, weight: .bold, design: .default)
+                    $0.imageSize = Layout.reactionsAndCommentsImageSize
+                    $0.clickable = Platform.is(.macOS) ? true : false
+                  },
+                  action: action)
     }
 }
 
@@ -81,28 +85,23 @@ private struct ReactionsAndCommentsView: View {
     let commentsCount: Int
 
     var body: some View {
-        HStack {
-            label(title: title(from: reactionsCount, suffix: "reactions"), image: "reactions")
-            label(title: title(from: commentsCount, suffix: "comments"), image: "comments")
-        }
-    }
+        let config: (inout DEVButtonConfig) -> Void = {
+            $0.forgroundColor = .secondaryText
+            $0.selectedForgroundColor = .tertiaryText
+            $0.textFont = Font.system(size: Layout.reactionsAndCommentsTextFontSize)
+            $0.imageSize = Layout.reactionsAndCommentsImageSize
+            $0.clickable = Platform.is(.macOS) ? true : false
+          }
 
-    @ViewBuilder func label(title: String, image: String) -> some View {
-        Label(
-            title: {
-                Text(title)
-                    .foregroundColor(.secondaryText)
-                    .font(.system(size: Layout.reactionsAndCommentsTextFontSize))
-            },
-            icon: {
-                Image(image)
-                    .resizable()
-                    .renderingMode(.template)
-                    .foregroundColor(.secondaryText)
-                    .frame(width: Layout.reactionsAndCommentsImageSize,
-                           height: Layout.reactionsAndCommentsImageSize)
-            }
-        )
+        HStack {
+            DEVButton(title(from: reactionsCount, suffix: "reactions"),
+                      imageName: "reactions",
+                      config: config)
+
+            DEVButton(title(from: commentsCount, suffix: "comments"),
+                      imageName: "comments",
+                      config: config)
+        }
     }
 
     func title(from count: Int, suffix: String) -> String {
