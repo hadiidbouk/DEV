@@ -44,7 +44,10 @@ struct AppView: View {
             }
             #else
             AppSideBarView(store: store)
-            moduleView
+            VStack(spacing: .zero) {
+                Divider()
+                moduleView
+            }
             #endif
         }
         .onAppear {
