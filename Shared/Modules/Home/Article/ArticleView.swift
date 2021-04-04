@@ -28,7 +28,11 @@ struct ArticleView: View {
                                    .init(text: "productivity"),
                                    .init(text: "codenewbie"),
                                    .init(text: "tutorial")])
-                ReactionsAndCommentsView(reactionsCount: 17, commentsCount: 3)
+                HStack {
+                    ReactionsAndCommentsView(reactionsCount: 17, commentsCount: 3)
+                    Spacer()
+                    SaveView()
+                }
             }
             .padding(.leading, Layout.viewsLeadingPadding)
             .padding(.top, Layout.viewsTopPadding)
@@ -114,6 +118,28 @@ private struct ReactionsAndCommentsView: View {
     }
 }
 
+private struct SaveView: View {
+    var body: some View {
+        HStack(spacing: Layout.minReadAndSaveButtonSpacing) {
+            Text("3 min read")
+                .foregroundColor(.tertiaryText)
+                .font(.system(size: Layout.minReadFontSize))
+
+            DEVButton("Save",
+                      config: {
+                        $0.forgroundColor = .secondaryText
+                        $0.backgroundColor = .appSecondary
+                        $0.selectedBackgroundColor = .appTertiary
+                        $0.contentPadding = Layout.saveButtonContentPadding
+                        $0.textFont = .system(size: Layout.saveButtonFontSize)
+                      },
+                      action: {
+
+                      })
+        }
+    }
+}
+
 #if DEBUG
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
@@ -135,4 +161,12 @@ struct ReactionsAndCommentsView_Previews: PreviewProvider {
             .padding()
     }
 }
+
+struct SaveView_Previews: PreviewProvider {
+    static var previews: some View {
+        SaveView()
+            .padding()
+    }
+}
+
 #endif

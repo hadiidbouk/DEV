@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DEVButtonConfig {
-    var cornerRadius: CGFloat = 3
+    var cornerRadius: CGFloat = 5
     var forgroundColor: Color = .primaryText
     var selectedForgroundColor: Color = .primaryText
     var backgroundColor: Color = .clear

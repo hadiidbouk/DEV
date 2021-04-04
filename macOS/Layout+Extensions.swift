@@ -23,6 +23,10 @@ extension ArticleView.Layout {
     static let reactionsAndCommentsImageSize: CGFloat = 24
     static let reactionsAndCommentsTextFontSize: CGFloat = 14
     static let viewsLeadingPadding: CGFloat = imageSize + imageAndNameSpacing
+    static let minReadFontSize: CGFloat = 14
+    static let saveButtonFontSize: CGFloat = 15
+    static let minReadAndSaveButtonSpacing: CGFloat = 10
+    static let saveButtonContentPadding: CGFloat = 10
 }
 
 extension TagListView.Layout {
