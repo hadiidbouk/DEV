@@ -70,6 +70,7 @@
 		FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74EE2611E000008269BB /* Layout+Extensions.swift */; };
 		FAFB75102611E9B5008269BB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB750F2611E9B5008269BB /* Color+Extensions.swift */; };
 		FAFB75112611E9B5008269BB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB750F2611E9B5008269BB /* Color+Extensions.swift */; };
+		FAFF5AB0261A4FAC00B94641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF5AAF261A4FAC00B94641 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		FAFB74EE2611E000008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
 		FAFB74F42611E00D008269BB /* Layout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Extensions.swift"; sourceTree = "<group>"; };
 		FAFB750F2611E9B5008269BB /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		FAFF5AAF261A4FAC00B94641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 				FAABEF0E2609257E00753714 /* macOS.entitlements */,
 				FABBB7D8260FBEED00AB95FC /* Cursor.swift */,
 				FAFB74EE2611E000008269BB /* Layout+Extensions.swift */,
+				FAFF5AAF261A4FAC00B94641 /* AppDelegate.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -707,6 +710,7 @@
 				FABBB8202610AA0400AB95FC /* VideosView.swift in Sources */,
 				FABBB814260FEE6700AB95FC /* PodcastsView.swift in Sources */,
 				FABBB7DA260FBEED00AB95FC /* Cursor.swift in Sources */,
+				FAFF5AB0261A4FAC00B94641 /* AppDelegate.swift in Sources */,
 				FAABEF45260929B500753714 /* HomeCore.swift in Sources */,
 				FAA7A08E260B9A54007F48A1 /* View+Extensions.swift in Sources */,
 				FAABEF102609257E00753714 /* App.swift in Sources */,
