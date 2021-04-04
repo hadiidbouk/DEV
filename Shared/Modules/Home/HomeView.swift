@@ -9,7 +9,14 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home")
+        ScrollView {
+            LazyVStack {
+                ForEach(0..<10, id: \.self) { _ in
+                    ArticleView()
+                }
+            }
+            .padding()
+        }
     }
 }
 
