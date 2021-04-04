@@ -128,4 +128,11 @@ struct TitleView_Previews: PreviewProvider {
             .padding()
     }
 }
+
+struct ReactionsAndCommentsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ReactionsAndCommentsView(reactionsCount: 12, commentsCount: 37)
+            .padding()
+    }
+}
 #endif
