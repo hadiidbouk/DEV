@@ -17,6 +17,6 @@ DEV is an unofficial multiplatform (iOS, iPadOS, and macOS) app for https://dev.
 
 1. Add this [pre-commit](https://github.com/hadiidbouk/DEV/blob/main/pre-commit) file to your `.git/hooks` folder.
 2. Run this command  from the root of this project directory `chmod +x .git/hooks/pre-commit`
-3. Any new change should be added to the [Main Project](https://github.com/hadiidbouk/DEV/projects/1) and converted to an issue.
+3. Any new changes should be added as an issue first.
 4. Your branch name should be started with the issue id (ex: #15-my-new-awesome-branch)
 5. Your commit should be started with the issue id (ex: #15 - my commit message)
