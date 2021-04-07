@@ -10,7 +10,6 @@ jobs:
       matrix:
         run-config:
           - { scheme: 'DEViOSTests', destination: 'platform=iOS Simulator,OS=14.4,name=iPhone 12' }
-          #- { scheme: 'DEV (macOS)', destination: 'platform=macOS' }
 
     steps:
     - name: Checkout Project
@@ -18,6 +17,12 @@ jobs:
 
     - name: Show the currently detailed version of Xcode for CLI
       run: xcode-select -p
+
+    - name: build and test API package
+      run: swift build -v
+
+    - name: test API package
+      run: swift test -v
 
     - name: build and test
       run: xcodebuild clean test -scheme '${{ matrix.run-config['scheme'] }}' -destination '${{ matrix.run-config['destination'] }}' -showBuildTimingSummary
