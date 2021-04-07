@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "DEVAPI",
-            targets: ["DEVAPI"]),
+            targets: ["DEVAPI"])
     ],
     targets: [
         .target(
@@ -18,6 +18,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "DEVAPITests",
-            dependencies: ["DEVAPI"]),
+            dependencies: ["DEVAPI"])
     ]
 )
