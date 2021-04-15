@@ -13,6 +13,8 @@
 		FA23D53726151F1500A00E36 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D53526151F1500A00E36 /* RoundedImageView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
 		FA317E0C261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
+		FA51B482261F4650003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B481261F4650003E7DF3 /* DEVAPI */; };
+		FA51B484261F4655003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B483261F4655003E7DF3 /* DEVAPI */; };
 		FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
 		FAA7A088260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
@@ -142,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF28260927F500753714 /* ComposableArchitecture in Frameworks */,
+				FA51B482261F4650003E7DF3 /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF2D2609285D00753714 /* ComposableArchitecture in Frameworks */,
+				FA51B484261F4655003E7DF3 /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +466,7 @@
 			name = "DEV (iOS)";
 			packageProductDependencies = (
 				FAABEF27260927F500753714 /* ComposableArchitecture */,
+				FA51B481261F4650003E7DF3 /* DEVAPI */,
 			);
 			productName = "DEV (iOS)";
 			productReference = FAABEF032609257E00753714 /* DEV.app */;
@@ -483,6 +488,7 @@
 			name = "DEV (macOS)";
 			packageProductDependencies = (
 				FAABEF2C2609285D00753714 /* ComposableArchitecture */,
+				FA51B483261F4655003E7DF3 /* DEVAPI */,
 			);
 			productName = "DEV (macOS)";
 			productReference = FAABEF0B2609257E00753714 /* DEV.app */;
@@ -1127,6 +1133,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA51B481261F4650003E7DF3 /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
+		};
+		FA51B483261F4655003E7DF3 /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
+		};
 		FAABEF27260927F500753714 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
