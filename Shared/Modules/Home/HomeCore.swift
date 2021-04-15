@@ -29,7 +29,7 @@ struct HomeEnvironment {
 let homeReducer = Reducer<HomeState, HomeAction, HomeEnvironment> { state, action, environment in
     switch action {
     case .loadLatestArticles:
-        return environment.articles.latest(state.queryItems)
+        return environment.articles.all(state.queryItems)
             .receive(on: DispatchQueue.main.eraseToAnyScheduler())
             .mapError(AppError.map)
             .catchToEffect()
