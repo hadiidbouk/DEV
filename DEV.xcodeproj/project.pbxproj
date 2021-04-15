@@ -13,6 +13,8 @@
 		FA317E0C261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
 		FA51B482261F4650003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B481261F4650003E7DF3 /* DEVAPI */; };
 		FA51B484261F4655003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B483261F4655003E7DF3 /* DEVAPI */; };
+		FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B49B261F58C6003E7DF3 /* Kingfisher */; };
+		FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B4A1261F58CF003E7DF3 /* Kingfisher */; };
 		FA51B4A8261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA51B4A9261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
@@ -143,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */,
 				FAABEF28260927F500753714 /* ComposableArchitecture in Frameworks */,
 				FA51B482261F4650003E7DF3 /* DEVAPI in Frameworks */,
 			);
@@ -152,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */,
 				FAABEF2D2609285D00753714 /* ComposableArchitecture in Frameworks */,
 				FA51B484261F4655003E7DF3 /* DEVAPI in Frameworks */,
 			);
@@ -467,6 +471,7 @@
 			packageProductDependencies = (
 				FAABEF27260927F500753714 /* ComposableArchitecture */,
 				FA51B481261F4650003E7DF3 /* DEVAPI */,
+				FA51B49B261F58C6003E7DF3 /* Kingfisher */,
 			);
 			productName = "DEV (iOS)";
 			productReference = FAABEF032609257E00753714 /* DEV.app */;
@@ -489,6 +494,7 @@
 			packageProductDependencies = (
 				FAABEF2C2609285D00753714 /* ComposableArchitecture */,
 				FA51B483261F4655003E7DF3 /* DEVAPI */,
+				FA51B4A1261F58CF003E7DF3 /* Kingfisher */,
 			);
 			productName = "DEV (macOS)";
 			productReference = FAABEF0B2609257E00753714 /* DEV.app */;
@@ -566,6 +572,7 @@
 			mainGroup = FAABEEF62609257D00753714;
 			packageReferences = (
 				FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FAABEF042609257E00753714 /* Products */;
 			projectDirPath = "";
@@ -1122,6 +1129,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
 		FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -1140,6 +1155,16 @@
 		FA51B483261F4655003E7DF3 /* DEVAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DEVAPI;
+		};
+		FA51B49B261F58C6003E7DF3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FA51B4A1261F58CF003E7DF3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		FAABEF27260927F500753714 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
