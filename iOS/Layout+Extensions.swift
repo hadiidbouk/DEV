@@ -30,5 +30,5 @@ extension ArticleView.Layout {
 }
 
 extension TagListView.Layout {
-    static let tagFontSize: CGFloat = Platform.current == .iPadOS ? 20 : 12
+    static let tagFontSize: CGFloat = Platform.is(.iPadOS) ? 20 : 12
 }
