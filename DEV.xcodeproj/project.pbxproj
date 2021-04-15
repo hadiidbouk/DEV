@@ -522,6 +522,8 @@
 				FAABEF6A260938E700753714 /* PBXTargetDependency */,
 			);
 			name = DEViOSTests;
+			packageProductDependencies = (
+			);
 			productName = DEViOSTests;
 			productReference = FAABEF64260938E700753714 /* DEViOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1057,6 +1059,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEVmacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1081,6 +1084,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEVmacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
