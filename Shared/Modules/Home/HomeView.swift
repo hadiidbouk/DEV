@@ -5,17 +5,28 @@
 //  Created by Hadi on 22/03/2021.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct HomeView: View {
+    let store: Store<HomeState, HomeAction>
+
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(0..<10, id: \.self) { _ in
-                    ArticleView()
+        WithViewStore(store) { viewStore in
+            ScrollView {
+                if viewStore.articles.isEmpty {
+                    Text("Loading...")
+                } else {
+                    LazyVStack {
+                        ForEach(viewStore.articles) { article in
+                            ArticleView(article: article)
+                        }
+                    }
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding()
+            .onAppear { viewStore.send(.loadLatestArticles) }
         }
     }
 }
@@ -23,7 +34,9 @@ struct HomeView: View {
 #if DEBUG
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(store: .init(initialState: .init(),
+                              reducer: homeReducer,
+                              environment: .init(articles: .mock)))
     }
 }
 #endif

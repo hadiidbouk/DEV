@@ -52,7 +52,7 @@ extension Module: Identifiable {
     // swiftlint:disable cyclomatic_complexity
     @ViewBuilder func view(_ store: Store<AppState, AppAction>) -> some View {
         switch self {
-        case .home:             HomeView()
+        case .home:             HomeView(store: store.scope(state: \.home, action: AppAction.home))
         case .readingList:      ReadingListView()
         case .listings:         ListingsView()
         case .podcasts:         PodcastsView()

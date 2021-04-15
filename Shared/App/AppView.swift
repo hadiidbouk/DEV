@@ -65,7 +65,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         AppView(store: .init(initialState: .init(),
                              reducer: appReducer,
-                             environment: .init(homeEnvironment: .init())))
+                             environment: .init(homeEnvironment: .init(articles: .mock))))
     }
 }
 #endif

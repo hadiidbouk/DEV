@@ -5,6 +5,7 @@
 //  Created by Hadi on 31/03/2021.
 //
 
+import DEVAPI
 import SwiftUI
 
 private typealias Layout = ArticleView.Layout
@@ -17,19 +18,18 @@ extension ArticleView {
 }
 
 struct ArticleView: View {
+    let article: Article
+
     var body: some View {
         VStack(alignment: .leading) {
-            UserInfoView()
+            UserInfoView(name: article.user.name, date: article.readablePublishDate, image: article.user.profileImage90)
 
             Group {
-                TitleView()
-                TagListView(tags: [.init(text: "challenge"),
-                                   .init(text: "programming"),
-                                   .init(text: "productivity"),
-                                   .init(text: "codenewbie"),
-                                   .init(text: "tutorial")])
+                TitleView(title: article.title)
+                TagListView(tags: article.tagList.map { TagItem(text: $0) })
                 HStack {
-                    ReactionsAndCommentsView(reactionsCount: 17, commentsCount: 3)
+                    ReactionsAndCommentsView(reactionsCount: article.publicReactionsCount,
+                                             commentsCount: article.commentsCount)
                     Spacer()
                     SaveView()
                 }
@@ -44,18 +44,23 @@ struct ArticleView: View {
 }
 
 private struct UserInfoView: View {
+    let name: String
+    let date: String
+    let image: String
+
     var body: some View {
         HStack(alignment: .top, spacing: Layout.imageAndNameSpacing) {
-            RoundedImageView(image: Image("user"))
+            RemoteImageView(imageUrl: image)
+                .roundedBorder()
                 .frame(width: Layout.imageSize, height: Layout.imageSize)
 
             VStack(alignment: .leading, spacing: Layout.userNameAndDateSpacing) {
-                Text("Leonardo J. 👨🏻‍💻")
+                Text(name)
                     .font(.system(size: Layout.userNameFontSize))
                     .fontWeight(.medium)
                     .foregroundColor(.secondaryText)
 
-                Text("Aug 5 '20")
+                Text(date)
                     .font(.system(size: Layout.dateFontSize))
                     .font(.body)
                     .foregroundColor(.tertiaryText)
@@ -67,12 +72,14 @@ private struct UserInfoView: View {
 }
 
 private struct TitleView: View {
+    let title: String
+
     var body: some View {
         let action = Platform.is(.macOS) ? {
             // do Something
         } : {}
 
-        DEVButton("My favorite resources being a freelancer as a side hustle 💎",
+        DEVButton(title,
                   config: {
                     $0.forgroundColor = .primaryText
                     $0.selectedForgroundColor = .accent
@@ -121,9 +128,11 @@ private struct ReactionsAndCommentsView: View {
 private struct SaveView: View {
     var body: some View {
         HStack(spacing: Layout.minReadAndSaveButtonSpacing) {
-            Text("3 min read")
-                .foregroundColor(.tertiaryText)
-                .font(.system(size: Layout.minReadFontSize))
+
+            // TODO : Find a way to present minutes of read, currently it's not avaible from the API.
+//            Text("3 min read")
+//                .foregroundColor(.tertiaryText)
+//                .font(.system(size: Layout.minReadFontSize))
 
             DEVButton("Save",
                       config: {
@@ -143,14 +152,14 @@ private struct SaveView: View {
 #if DEBUG
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleView()
+        ArticleView(article: .mock())
             .padding()
     }
 }
 
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
-        TitleView()
+        TitleView(title: "This is a title")
             .padding()
     }
 }
