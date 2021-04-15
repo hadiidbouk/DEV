@@ -21,6 +21,10 @@ public extension DEVClient.Articles {
             Just(fetchArticles(from: "articles-latest"))
                 .setFailureType(to: Error.self)
                 .eraseToAnyPublisher()
+        }, all: { _ in
+            Just(fetchArticles(from: "articles"))
+                .setFailureType(to: Error.self)
+                .eraseToAnyPublisher()
         }
     )
 }

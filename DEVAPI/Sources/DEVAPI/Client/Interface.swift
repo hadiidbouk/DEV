@@ -15,6 +15,7 @@ public struct DEVClient {
 public extension DEVClient {
     struct Articles {
         public var latest: ([DEVQueryItem]) -> AnyPublisher<[Article], Error>
+        public var all: ([DEVQueryItem]) -> AnyPublisher<[Article], Error>
     }
 }
 

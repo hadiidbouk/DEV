@@ -11,16 +11,7 @@ import Foundation
 // swiftlint:disable trailing_closure
 public extension DEVClient {
     static let live = Self(
-        articles: {
-            Articles(
-                latest: { queryItems in
-                    URLSession.shared.dataTaskPublisher(for: url(for: "articles/latest", with: queryItems))
-                        .map { data, _ in data }
-                        .decode(type: [Article].self, decoder: jsonDecoder)
-                        .eraseToAnyPublisher()
-                }
-            )
-        }
+        articles: { .live }
     )
 }
 
@@ -28,6 +19,11 @@ public extension DEVClient.Articles {
     static let live = Self(
         latest: { queryItems in
             URLSession.shared.dataTaskPublisher(for: url(for: "articles/latest", with: queryItems))
+                .map { data, _ in data }
+                .decode(type: [Article].self, decoder: jsonDecoder)
+                .eraseToAnyPublisher()
+        }, all: { queryItems in
+            URLSession.shared.dataTaskPublisher(for: url(for: "articles", with: queryItems))
                 .map { data, _ in data }
                 .decode(type: [Article].self, decoder: jsonDecoder)
                 .eraseToAnyPublisher()
