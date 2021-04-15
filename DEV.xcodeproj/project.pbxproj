@@ -13,6 +13,8 @@
 		FA317E0C261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
 		FA51B482261F4650003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B481261F4650003E7DF3 /* DEVAPI */; };
 		FA51B484261F4655003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B483261F4655003E7DF3 /* DEVAPI */; };
+		FA51B494261F56A7003E7DF3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */; };
+		FA51B495261F56A7003E7DF3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */; };
 		FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B49B261F58C6003E7DF3 /* Kingfisher */; };
 		FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B4A1261F58CF003E7DF3 /* Kingfisher */; };
 		FA51B4A8261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
@@ -97,6 +99,7 @@
 /* Begin PBXFileReference section */
 		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderViewModifier.swift; sourceTree = "<group>"; };
 		FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		FAA7A087260B98B7007F48A1 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
@@ -191,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				FADC1F622618F5F9009A129D /* DEVButton.swift */,
+				FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */,
 				FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */,
 			);
 			path = Shared;
@@ -691,6 +695,7 @@
 				FAABEF3D2609297F00753714 /* AppCore.swift in Sources */,
 				FABBB813260FEE6700AB95FC /* PodcastsView.swift in Sources */,
 				FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */,
+				FA51B494261F56A7003E7DF3 /* RemoteImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +727,7 @@
 				FABBB8202610AA0400AB95FC /* VideosView.swift in Sources */,
 				FABBB814260FEE6700AB95FC /* PodcastsView.swift in Sources */,
 				FABBB7DA260FBEED00AB95FC /* Cursor.swift in Sources */,
+				FA51B495261F56A7003E7DF3 /* RemoteImageView.swift in Sources */,
 				FAFF5AB0261A4FAC00B94641 /* AppDelegate.swift in Sources */,
 				FAABEF45260929B500753714 /* HomeCore.swift in Sources */,
 				FAA7A08E260B9A54007F48A1 /* View+Extensions.swift in Sources */,
