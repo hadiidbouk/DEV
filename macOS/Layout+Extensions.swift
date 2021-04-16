@@ -16,7 +16,7 @@ extension AppSideBarView.Layout {
 extension ArticleView.Layout {
     static let contentPadding: CGFloat = 30
     static let viewsTopPadding: CGFloat = 12
-    static let titleFontSize: CGFloat = 30
+    static let titleFontSize: CGFloat = 27
     static let imageSize: CGFloat = 50
     static let userNameFontSize: CGFloat = 17
     static let dateFontSize: CGFloat = 14

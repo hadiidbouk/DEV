@@ -15,7 +15,10 @@ let package = Package(
     targets: [
         .target(
             name: "DEVAPI",
-            dependencies: []),
+            dependencies: [],
+            resources: [
+                .process("Resources")
+            ]),
         .testTarget(
             name: "DEVAPITests",
             dependencies: ["DEVAPI"])

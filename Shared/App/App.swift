@@ -19,7 +19,7 @@ struct DEVApp: App {
         let windowGroup = WindowGroup {
             let store = Store(initialState: AppState(),
                               reducer: appReducer,
-                              environment: AppEnvironment(homeEnvironment: .init()))
+                              environment: AppEnvironment(homeEnvironment: .init(articles: .live)))
             AppView(store: store)
         }
 

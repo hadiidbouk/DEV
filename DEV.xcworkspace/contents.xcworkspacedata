@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:DEVAPI">
+      location = "group:DEV.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DEV.xcodeproj">
+      location = "group:DEVAPI">
    </FileRef>
 </Workspace>

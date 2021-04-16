@@ -36,5 +36,8 @@ identifier_name:
     - i
     - j
 
+disabled_rules:
+  - todo
+
 reporter: "xcode"
 
