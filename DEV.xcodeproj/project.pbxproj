@@ -21,6 +21,8 @@
 		FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B4A1261F58CF003E7DF3 /* Kingfisher */; };
 		FA51B4A8261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA51B4A9261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
+		FA75E0B12628EF6600BF35E5 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA75E0B02628EF6600BF35E5 /* DEVAPI */; };
+		FA75E0C32628F06100BF35E5 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA75E0C22628F06100BF35E5 /* DEVAPI */; };
 		FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
 		FAA7A088260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
@@ -171,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA75E0B12628EF6600BF35E5 /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA75E0C32628F06100BF35E5 /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +527,7 @@
 			);
 			name = DEViOSTests;
 			packageProductDependencies = (
+				FA75E0B02628EF6600BF35E5 /* DEVAPI */,
 			);
 			productName = DEViOSTests;
 			productReference = FAABEF64260938E700753714 /* DEViOSTests.xctest */;
@@ -542,6 +547,9 @@
 				FAABEF7B260938F900753714 /* PBXTargetDependency */,
 			);
 			name = DEVmacOSTests;
+			packageProductDependencies = (
+				FA75E0C22628F06100BF35E5 /* DEVAPI */,
+			);
 			productName = DEVmacOSTests;
 			productReference = FAABEF75260938F900753714 /* DEVmacOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -999,6 +1007,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL77PVMV33;
+				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEViOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1026,6 +1035,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL77PVMV33;
+				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEViOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1054,6 +1064,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YL77PVMV33;
+				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1079,6 +1090,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YL77PVMV33;
+				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1183,6 +1195,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		FA75E0B02628EF6600BF35E5 /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
+		};
+		FA75E0C22628F06100BF35E5 /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
 		};
 		FAABEF27260927F500753714 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
