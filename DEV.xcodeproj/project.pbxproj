@@ -72,8 +72,6 @@
 		FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */; };
 		FADAC2AB262A1CFD00103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2AA262A1CFD00103D5F /* DEVAPI */; };
 		FADAC2AD262A1D0100103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2AC262A1D0100103D5F /* DEVAPI */; };
-		FADAC2C5262A1DA700103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2C4262A1DA700103D5F /* DEVAPI */; };
-		FADAC2CB262A1DB400103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2CA262A1DB400103D5F /* DEVAPI */; };
 		FADC1F632618F5F9009A129D /* DEVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC1F622618F5F9009A129D /* DEVButton.swift */; };
 		FADC1F642618F5F9009A129D /* DEVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC1F622618F5F9009A129D /* DEVButton.swift */; };
 		FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74F42611E00D008269BB /* Layout+Extensions.swift */; };
@@ -173,7 +171,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADAC2C5262A1DA700103D5F /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADAC2CB262A1DB400103D5F /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +523,6 @@
 			);
 			name = DEViOSTests;
 			packageProductDependencies = (
-				FADAC2C4262A1DA700103D5F /* DEVAPI */,
 			);
 			productName = DEViOSTests;
 			productReference = FAABEF64260938E700753714 /* DEViOSTests.xctest */;
@@ -548,7 +543,6 @@
 			);
 			name = DEVmacOSTests;
 			packageProductDependencies = (
-				FADAC2CA262A1DB400103D5F /* DEVAPI */,
 			);
 			productName = DEVmacOSTests;
 			productReference = FAABEF75260938F900753714 /* DEVmacOSTests.xctest */;
@@ -1199,14 +1193,6 @@
 			productName = DEVAPI;
 		};
 		FADAC2AC262A1D0100103D5F /* DEVAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DEVAPI;
-		};
-		FADAC2C4262A1DA700103D5F /* DEVAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DEVAPI;
-		};
-		FADAC2CA262A1DB400103D5F /* DEVAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DEVAPI;
 		};
