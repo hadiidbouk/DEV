@@ -11,8 +11,6 @@
 		FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
 		FA317E0C261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
-		FA51B482261F4650003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B481261F4650003E7DF3 /* DEVAPI */; };
-		FA51B484261F4655003E7DF3 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B483261F4655003E7DF3 /* DEVAPI */; };
 		FA51B48A261F4F9F003E7DF3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B489261F4F9F003E7DF3 /* AppError.swift */; };
 		FA51B48B261F4F9F003E7DF3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B489261F4F9F003E7DF3 /* AppError.swift */; };
 		FA51B494261F56A7003E7DF3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */; };
@@ -21,8 +19,6 @@
 		FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B4A1261F58CF003E7DF3 /* Kingfisher */; };
 		FA51B4A8261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA51B4A9261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
-		FA75E0B12628EF6600BF35E5 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA75E0B02628EF6600BF35E5 /* DEVAPI */; };
-		FA75E0C32628F06100BF35E5 /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FA75E0C22628F06100BF35E5 /* DEVAPI */; };
 		FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
 		FAA7A088260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
@@ -74,6 +70,10 @@
 		FABBB88726111C6300AB95FC /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB88626111C6300AB95FC /* ContactView.swift */; };
 		FABBB88826111C6300AB95FC /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB88626111C6300AB95FC /* ContactView.swift */; };
 		FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */; };
+		FADAC2AB262A1CFD00103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2AA262A1CFD00103D5F /* DEVAPI */; };
+		FADAC2AD262A1D0100103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2AC262A1D0100103D5F /* DEVAPI */; };
+		FADAC2C5262A1DA700103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2C4262A1DA700103D5F /* DEVAPI */; };
+		FADAC2CB262A1DB400103D5F /* DEVAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FADAC2CA262A1DB400103D5F /* DEVAPI */; };
 		FADC1F632618F5F9009A129D /* DEVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC1F622618F5F9009A129D /* DEVButton.swift */; };
 		FADC1F642618F5F9009A129D /* DEVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC1F622618F5F9009A129D /* DEVButton.swift */; };
 		FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB74F42611E00D008269BB /* Layout+Extensions.swift */; };
@@ -153,9 +153,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADAC2AB262A1CFD00103D5F /* DEVAPI in Frameworks */,
 				FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */,
 				FAABEF28260927F500753714 /* ComposableArchitecture in Frameworks */,
-				FA51B482261F4650003E7DF3 /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,9 +163,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADAC2AD262A1D0100103D5F /* DEVAPI in Frameworks */,
 				FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */,
 				FAABEF2D2609285D00753714 /* ComposableArchitecture in Frameworks */,
-				FA51B484261F4655003E7DF3 /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA75E0B12628EF6600BF35E5 /* DEVAPI in Frameworks */,
+				FADAC2C5262A1DA700103D5F /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA75E0C32628F06100BF35E5 /* DEVAPI in Frameworks */,
+				FADAC2CB262A1DB400103D5F /* DEVAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,8 +482,8 @@
 			name = "DEV (iOS)";
 			packageProductDependencies = (
 				FAABEF27260927F500753714 /* ComposableArchitecture */,
-				FA51B481261F4650003E7DF3 /* DEVAPI */,
 				FA51B49B261F58C6003E7DF3 /* Kingfisher */,
+				FADAC2AA262A1CFD00103D5F /* DEVAPI */,
 			);
 			productName = "DEV (iOS)";
 			productReference = FAABEF032609257E00753714 /* DEV.app */;
@@ -505,8 +505,8 @@
 			name = "DEV (macOS)";
 			packageProductDependencies = (
 				FAABEF2C2609285D00753714 /* ComposableArchitecture */,
-				FA51B483261F4655003E7DF3 /* DEVAPI */,
 				FA51B4A1261F58CF003E7DF3 /* Kingfisher */,
+				FADAC2AC262A1D0100103D5F /* DEVAPI */,
 			);
 			productName = "DEV (macOS)";
 			productReference = FAABEF0B2609257E00753714 /* DEV.app */;
@@ -527,7 +527,7 @@
 			);
 			name = DEViOSTests;
 			packageProductDependencies = (
-				FA75E0B02628EF6600BF35E5 /* DEVAPI */,
+				FADAC2C4262A1DA700103D5F /* DEVAPI */,
 			);
 			productName = DEViOSTests;
 			productReference = FAABEF64260938E700753714 /* DEViOSTests.xctest */;
@@ -548,7 +548,7 @@
 			);
 			name = DEVmacOSTests;
 			packageProductDependencies = (
-				FA75E0C22628F06100BF35E5 /* DEVAPI */,
+				FADAC2CA262A1DB400103D5F /* DEVAPI */,
 			);
 			productName = DEVmacOSTests;
 			productReference = FAABEF75260938F900753714 /* DEVmacOSTests.xctest */;
@@ -1007,13 +1007,12 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL77PVMV33;
-				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEViOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEViOSTests;
@@ -1035,13 +1034,12 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YL77PVMV33;
-				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEViOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(inherited)",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hadiidbouk.DEViOSTests;
@@ -1064,7 +1062,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YL77PVMV33;
-				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1090,7 +1087,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YL77PVMV33;
-				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = YES;
 				INFOPLIST_FILE = DEVmacOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1178,14 +1174,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA51B481261F4650003E7DF3 /* DEVAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DEVAPI;
-		};
-		FA51B483261F4655003E7DF3 /* DEVAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DEVAPI;
-		};
 		FA51B49B261F58C6003E7DF3 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
@@ -1196,14 +1184,6 @@
 			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		FA75E0B02628EF6600BF35E5 /* DEVAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DEVAPI;
-		};
-		FA75E0C22628F06100BF35E5 /* DEVAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DEVAPI;
-		};
 		FAABEF27260927F500753714 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
@@ -1213,6 +1193,22 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		FADAC2AA262A1CFD00103D5F /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
+		};
+		FADAC2AC262A1D0100103D5F /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
+		};
+		FADAC2C4262A1DA700103D5F /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
+		};
+		FADAC2CA262A1DB400103D5F /* DEVAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DEVAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
