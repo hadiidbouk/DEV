@@ -13,6 +13,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         windows.forEach { window in
             window.titlebarAppearsTransparent = true
             window.backgroundColor = NSColor(.background)
+            window.titlebarContainerView?.layer?.backgroundColor = NSColor(.background).cgColor
         }
     }
 }
