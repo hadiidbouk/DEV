@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA09250A262CD8F900AF93A0 /* NSWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */; };
 		FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
@@ -99,6 +100,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extensions.swift"; sourceTree = "<group>"; };
 		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		FA51B489261F4F9F003E7DF3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -184,6 +186,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA092508262CD8E600AF93A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB74EE2611E000008269BB /* Layout+Extensions.swift */,
+				FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FA23D5242615126400A00E36 /* Article */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,10 +301,10 @@
 		FAABEF0C2609257E00753714 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				FA092508262CD8E600AF93A0 /* Extensions */,
 				FAABEF0D2609257E00753714 /* Info.plist */,
 				FAABEF0E2609257E00753714 /* macOS.entitlements */,
 				FABBB7D8260FBEED00AB95FC /* Cursor.swift */,
-				FAFB74EE2611E000008269BB /* Layout+Extensions.swift */,
 				FAFF5AAF261A4FAC00B94641 /* AppDelegate.swift */,
 			);
 			path = macOS;
@@ -723,6 +734,7 @@
 				FABBB8642611182300AB95FC /* SponsorsView.swift in Sources */,
 				FAABEF42260929B000753714 /* AppCore.swift in Sources */,
 				FABBB7E6260FC10C00AB95FC /* ListingsView.swift in Sources */,
+				FA09250A262CD8F900AF93A0 /* NSWindow+Extensions.swift in Sources */,
 				FABBB88026111BE000AB95FC /* TermsOfUseView.swift in Sources */,
 				FAA7A0A8260BABAC007F48A1 /* Module.swift in Sources */,
 				FA51B48B261F4F9F003E7DF3 /* AppError.swift in Sources */,
