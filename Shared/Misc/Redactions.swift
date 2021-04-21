@@ -7,64 +7,104 @@
 
 import SwiftUI
 
-enum RedactionReason {
-    case placeholder
+extension RedactionReasons {
+    public static let animatedPlaceholder = RedactionReasons(rawValue: 100)
 }
 
 enum ShapeType {
+    case rectangle
     case roundedRectangle(cornerRadius: CGFloat)
     case circle
 }
 
 extension View {
-    func redacted(_ isRedacted: Bool,
-                  reason: RedactionReason = .placeholder,
-                  shapeType: ShapeType = .roundedRectangle(cornerRadius: Layout.roundedRectCornerRadius)) -> AnyView {
-        isRedacted ? modifier(Redactable(reason: reason, shapeType: shapeType)).anyView : self.anyView
+    func redactable(shapeType: ShapeType = .roundedRectangle(cornerRadius: Layout.roundedRectCornerRadius)) -> some View {
+        modifier(Redactable(shapeType: shapeType))
     }
 }
 
 // MARK: - Private Section
 private enum Layout {
     static let roundedRectCornerRadius: CGFloat = 12
-    static let overlayVerticalPadding: CGFloat = 2
+    static let overlayPadding: CGFloat = 2
+    static let animationDuration: TimeInterval = 1
 }
 
-private struct Placeholder: ViewModifier {
+private struct AnimatedPlaceholder: ViewModifier {
     let shapeType: ShapeType
+    @State var size: CGSize = .zero
+
+    @State private var xOffset: CGFloat = .zero
+    private let timer = Timer.publish(every: Layout.animationDuration, on: .main, in: .common).autoconnect()
+
+    let gradient = Gradient(colors: [.appSecondary, .appTertiary, .appSecondary])
 
     func body(content: Content) -> some View {
         content
             .opacity(.zero)
+            .overlay(overlayView)
+            .onReceive(timer) { _ in
+                if xOffset == size.width {
+                    xOffset = -size.width
+                } else {
+                    withAnimation(.linear(duration: Layout.animationDuration)) {
+                        xOffset = size.width
+                    }
+                }
+            }
             .overlay(
-                overlayView
-                    .padding(.vertical, Layout.overlayVerticalPadding)
+                ZStack {
+                    GeometryReader { geometry in
+                        Color.clear
+                            .onAppear {
+                                size = geometry.size
+                            }
+                    }
+                }
             )
     }
 
     @ViewBuilder
     var overlayView: some View {
         switch shapeType {
+        case .rectangle:
+            addAnimationContainer { Rectangle() }
         case let .roundedRectangle(cornerRadius):
-            RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(Color.appTertiary)
+            addAnimationContainer { RoundedRectangle(cornerRadius: cornerRadius) }
         case .circle:
-            Circle()
-                .fill(Color.appTertiary)
+            addAnimationContainer { Circle() }
         }
+    }
+
+    @ViewBuilder
+    func addAnimationContainer<Content: Shape>(content: () -> Content) -> some View {
+        ZStack {
+            content()
+                .fill(Color.appSecondary)
+
+            Rectangle()
+                .fill(LinearGradient(gradient: gradient,
+                                     startPoint: .leading,
+                                     endPoint: .trailing))
+                .offset(x: xOffset)
+        }
+        .clipShape(content())
     }
 }
 
 private struct Redactable: ViewModifier {
-    let reason: RedactionReason
+    @Environment(\.redactionReasons) private var reasons
+
     let shapeType: ShapeType
 
     @ViewBuilder
     func body(content: Content) -> some View {
-        switch reason {
-        case .placeholder:
+        switch reasons {
+        case .animatedPlaceholder:
             content
-                .modifier(Placeholder(shapeType: shapeType))
+                .modifier(AnimatedPlaceholder(shapeType: shapeType))
+        default:
+            content
         }
     }
 }

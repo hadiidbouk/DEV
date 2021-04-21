@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Article: Identifiable, Decodable, Equatable {
+public struct Article: Identifiable, Decodable, Equatable, Hashable {
     public let typeOf: String
     public let id: Int
     public let title: String
@@ -37,7 +37,7 @@ public struct Article: Identifiable, Decodable, Equatable {
 }
 
 public extension Article {
-    struct User: Decodable, Equatable {
+    struct User: Decodable, Equatable, Hashable {
         public let name: String
         public let username: String
         public let twitterUsername: String?
@@ -47,7 +47,7 @@ public extension Article {
         public let profileImage90: String
     }
 
-    struct Organization: Decodable, Equatable {
+    struct Organization: Decodable, Equatable, Hashable {
         public let name: String
         public let username: String
         public let slug: String
@@ -55,7 +55,7 @@ public extension Article {
         public let profileImage90: String
     }
 
-    struct FlareTag: Decodable, Equatable {
+    struct FlareTag: Decodable, Equatable, Hashable {
         public let name: String
         public let bgColorHex: String
         public let textColorHex: String

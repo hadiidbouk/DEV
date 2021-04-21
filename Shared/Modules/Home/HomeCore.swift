@@ -13,13 +13,15 @@ enum Constants {
 }
 struct HomeState: Equatable {
     var queryItems: [DEVQueryItem] = []
-    var articles: [Article] = []
+    var articles: [Article] = (0..<4).map { _ in Article.mock() }
     var error: AppError?
+    var isLoading: Bool = false
 }
 
 enum HomeAction {
     case loadLatestArticles
     case loadLatestArticlesResponse(Result<[Article], AppError>)
+    case none
 }
 
 struct HomeEnvironment {
@@ -29,6 +31,7 @@ struct HomeEnvironment {
 let homeReducer = Reducer<HomeState, HomeAction, HomeEnvironment> { state, action, environment in
     switch action {
     case .loadLatestArticles:
+        state.isLoading = true
         return environment.articles.all(state.queryItems)
             .receive(on: DispatchQueue.main.eraseToAnyScheduler())
             .mapError(AppError.map)
@@ -38,9 +41,13 @@ let homeReducer = Reducer<HomeState, HomeAction, HomeEnvironment> { state, actio
 
     case let .loadLatestArticlesResponse(.success(articles)):
         state.articles = articles
+        state.isLoading = false
         return .none
     case let .loadLatestArticlesResponse(.failure(error)):
         state.error = error
+        state.isLoading = true
+        return .none
+    case .none:
         return .none
     }
 }
