@@ -9,8 +9,8 @@ import ComposableArchitecture
 import SwiftUI
 
 private enum Layout {
-    static let minWindowWidth: CGFloat = 1_024
-    static let minWindowHeight: CGFloat = 768
+    static let minWindowWidth: CGFloat = Platform.is(.macOS) ? 1_024 : 0
+    static let minWindowHeight: CGFloat = Platform.is(.macOS) ? 768 : 0
 }
 
 struct AppView: View {
