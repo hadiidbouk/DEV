@@ -8,6 +8,11 @@
 import ComposableArchitecture
 import SwiftUI
 
+private enum Layout {
+    static let minWindowWidth: CGFloat = 1_024
+    static let minWindowHeight: CGFloat = 768
+}
+
 struct AppView: View {
     #if os(iOS)
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
@@ -18,8 +23,10 @@ struct AppView: View {
     var body: some View {
         let moduleView = WithViewStore(store) { viewStore in
             let view = viewStore.selectedModule.view(store)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.background)
+                .frame(minWidth: Layout.minWindowWidth,
+                       maxWidth: .infinity,
+                       minHeight: Layout.minWindowHeight,
+                       maxHeight: .infinity)
 
             #if os(iOS)
             view

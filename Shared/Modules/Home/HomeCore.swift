@@ -33,6 +33,7 @@ let homeReducer = Reducer<HomeState, HomeAction, HomeEnvironment> { state, actio
     case .loadLatestArticles:
         state.isLoading = true
         return environment.articles.all(state.queryItems)
+            .delay(for: .seconds(100), scheduler: DispatchQueue.main)
             .receive(on: DispatchQueue.main.eraseToAnyScheduler())
             .mapError(AppError.map)
             .catchToEffect()
