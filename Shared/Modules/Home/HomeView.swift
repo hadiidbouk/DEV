@@ -14,13 +14,11 @@ struct HomeView: View {
     var body: some View {
         WithViewStore(store) { viewStore in
             ScrollView {
-                if viewStore.articles.isEmpty {
-                    Text("Loading...")
-                } else {
-                    LazyVStack {
-                        ForEach(viewStore.articles) { article in
-                            ArticleView(article: article)
-                        }
+                LazyVStack {
+                    ForEach(viewStore.articles, id: \.self) { article in
+                        ArticleView(article: article,
+                                    isRedacted: viewStore.binding(get: \.isLoading,
+                                                                  send: HomeAction.none))
                     }
                 }
             }
