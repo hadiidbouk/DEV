@@ -43,7 +43,7 @@ echo "SwiftLint took $(($DIFF / 60)) minutes and $(($DIFF % 60)) seconds to comp
 #----------------------------------------------------------------
 # BUILD XCODE PROJECT & VALIDATE 
 #----------------------------------------------------------------
-xcodebuild -quiet build -project DEV.xcodeproj -scheme "Build (iOS and macOS)"
+xcodebuild -quiet build -workspace DEV.xcworkspace -scheme "Build (iOS and macOS)"
 if test $? -eq 0
     then echo "Successful build"
 else
