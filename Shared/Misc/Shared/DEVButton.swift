@@ -24,6 +24,8 @@ struct DEVButtonConfig {
 }
 
 struct DEVButton: View {
+    @Environment(\.redactionReasons) private var reasons
+
     @State var didHover: Bool = false
 
     let title: String
@@ -75,7 +77,7 @@ struct DEVButton: View {
         .onHover { inside in
             didHover = inside
 
-            guard config.clickable else { return }
+            guard config.clickable && reasons.isEmpty else { return }
 
             #if os(macOS)
             // This is a workaround, I found an unexpected behavior when I want to update the cursor,
@@ -89,6 +91,7 @@ struct DEVButton: View {
             #endif
         }
         .buttonStyle(Style(config, didHover: $didHover))
+        .allowsHitTesting(reasons.isEmpty)
     }
 }
 
