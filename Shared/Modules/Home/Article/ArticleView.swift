@@ -14,7 +14,6 @@ extension ArticleView {
     enum Layout {
         static let userNameAndDateSpacing: CGFloat = 3
         static let imageAndNameSpacing: CGFloat = 8
-        static let saveButtonRedactionCornerRadius: CGFloat = 4
     }
 }
 
@@ -39,8 +38,9 @@ struct ArticleView: View {
                                              commentsCount: article.commentsCount)
 
                     Spacer()
-                    SaveView()
-                        .redactable(shapeType: .roundedRectangle(cornerRadius: Layout.saveButtonRedactionCornerRadius))
+
+                    SaveView(readingTime: article.readingTimeMinutes)
+                        .redacted(reason: isRedacted ? .hidden : [])
                 }
             }
             .padding(.leading, Layout.viewsLeadingPadding)
@@ -115,7 +115,7 @@ private struct ReactionsAndCommentsView: View {
             $0.textFont = Font.system(size: Layout.reactionsAndCommentsTextFontSize)
             $0.imageSize = Layout.reactionsAndCommentsImageSize
             $0.clickable = Platform.is(.macOS) ? true : false
-          }
+        }
 
         HStack {
             DEVButton(title(from: reactionsCount, suffix: "reactions"),
@@ -141,13 +141,13 @@ private struct ReactionsAndCommentsView: View {
 }
 
 private struct SaveView: View {
+    let readingTime: Int
+
     var body: some View {
         HStack(spacing: Layout.minReadAndSaveButtonSpacing) {
-
-            // TODO : Find a way to present minutes of read, currently it's not avaible from the API.
-//            Text("3 min read")
-//                .foregroundColor(.tertiaryText)
-//                .font(.system(size: Layout.minReadFontSize))
+            Text("\(readingTime) min read")
+                .foregroundColor(.tertiaryText)
+                .font(.system(size: Layout.minReadFontSize))
 
             DEVButton("Save",
                       config: {
@@ -161,6 +161,7 @@ private struct SaveView: View {
 
                       })
         }
+        .redactable()
     }
 }
 
@@ -189,7 +190,7 @@ struct ReactionsAndCommentsView_Previews: PreviewProvider {
 
 struct SaveView_Previews: PreviewProvider {
     static var previews: some View {
-        SaveView()
+        SaveView(readingTime: 3)
             .padding()
     }
 }

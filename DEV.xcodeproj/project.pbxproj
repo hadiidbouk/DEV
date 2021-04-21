@@ -20,11 +20,12 @@
 		FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B4A1261F58CF003E7DF3 /* Kingfisher */; };
 		FA51B4A8261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA51B4A9261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
+		FA5BBCEF2630C43100FC16FB /* SponsorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB8622611182300AB95FC /* SponsorsView.swift */; };
+		FA5BBCF82630C44B00FC16FB /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FA7B3A79262E198A008EAA46 /* Redactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B3A78262E198A008EAA46 /* Redactions.swift */; };
 		FA7B3A7A262E198A008EAA46 /* Redactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B3A78262E198A008EAA46 /* Redactions.swift */; };
 		FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
 		FAA7A088260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
-		FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A087260B98B7007F48A1 /* Platform.swift */; };
 		FAA7A08E260B9A54007F48A1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */; };
 		FAA7A094260B9B8A007F48A1 /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A093260B9B8A007F48A1 /* AppSideBarView.swift */; };
 		FAA7A0A7260BABAC007F48A1 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A0A6260BABAC007F48A1 /* Module.swift */; };
@@ -63,7 +64,6 @@
 		FABBB84F2611175400AB95FC /* DEVShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB84E2611175400AB95FC /* DEVShopView.swift */; };
 		FABBB8502611175400AB95FC /* DEVShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB84E2611175400AB95FC /* DEVShopView.swift */; };
 		FABBB8632611182300AB95FC /* SponsorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB8622611182300AB95FC /* SponsorsView.swift */; };
-		FABBB8642611182300AB95FC /* SponsorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB8622611182300AB95FC /* SponsorsView.swift */; };
 		FABBB86F2611191800AB95FC /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB86E2611191800AB95FC /* AboutView.swift */; };
 		FABBB8702611191800AB95FC /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB86E2611191800AB95FC /* AboutView.swift */; };
 		FABBB87726111A0D00AB95FC /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB87626111A0D00AB95FC /* PrivacyPolicyView.swift */; };
@@ -728,7 +728,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA7A089260B98B7007F48A1 /* Platform.swift in Sources */,
 				FAABEF48260929B800753714 /* HomeView.swift in Sources */,
 				FAFB75112611E9B5008269BB /* Color+Extensions.swift in Sources */,
 				FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */,
@@ -736,7 +735,6 @@
 				FABBB87826111A0D00AB95FC /* PrivacyPolicyView.swift in Sources */,
 				FABBB8382610AC5600AB95FC /* CodeOfConductView.swift in Sources */,
 				FABBB8442610AD1D00AB95FC /* FAQView.swift in Sources */,
-				FABBB8642611182300AB95FC /* SponsorsView.swift in Sources */,
 				FAABEF42260929B000753714 /* AppCore.swift in Sources */,
 				FABBB7E6260FC10C00AB95FC /* ListingsView.swift in Sources */,
 				FA09250A262CD8F900AF93A0 /* NSWindow+Extensions.swift in Sources */,
@@ -746,9 +744,11 @@
 				FA51B48B261F4F9F003E7DF3 /* AppError.swift in Sources */,
 				FAB43F64260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
+				FA5BBCEF2630C43100FC16FB /* SponsorsView.swift in Sources */,
 				FADC1F642618F5F9009A129D /* DEVButton.swift in Sources */,
 				FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */,
 				FAA7A094260B9B8A007F48A1 /* AppSideBarView.swift in Sources */,
+				FA5BBCF82630C44B00FC16FB /* Platform.swift in Sources */,
 				FABBB8702611191800AB95FC /* AboutView.swift in Sources */,
 				FABBB88826111C6300AB95FC /* ContactView.swift in Sources */,
 				FA317E0C261771BD00E8A660 /* TagListView.swift in Sources */,

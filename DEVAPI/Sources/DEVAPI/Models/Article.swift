@@ -31,6 +31,7 @@ public struct Article: Identifiable, Decodable, Equatable, Hashable {
     public let lastCommentAt: Date?
     public let tagList: [String]
     public let tags: String
+    public let readingTimeMinutes: Int
     public let user: User
     public let organization: Organization?
     public let flareTag: FlareTag?

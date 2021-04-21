@@ -92,6 +92,7 @@ struct DEVButton: View {
         }
         .buttonStyle(Style(config, didHover: $didHover))
         .allowsHitTesting(reasons.isEmpty)
+        .fixedSize(horizontal: !reasons.isEmpty, vertical: false)
     }
 }
 

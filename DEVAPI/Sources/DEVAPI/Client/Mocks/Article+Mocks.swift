@@ -11,7 +11,7 @@ import Foundation
 public extension Article {
     static func mock(typeOf: String = "article",
                      id: Int = 660167,
-                     title: String = "Why Choose Shopware for Building Your B2B Business Empire?",
+                     title: String = "Why Choose Shopware for Building Your?",
                      description: String = "The B2B business market evolves day by day. Customer preferences rapidly change, prominent digital...",
                      readablePublishDate: String = "Apr  9",
                      slug: String = "why-choose-shopware-for-building-your-b2b-business-empire-1pi1",
@@ -32,10 +32,11 @@ public extension Article {
                      lastCommentAt: Date? = nil,
                      tagList: [String] = ["ecommerce","b2b","businessgrowth","shopware"],
                      tags: String = "ecommerce, b2b, businessgrowth, shopware",
+                     readingTimeMinutes: Int = 6,
                      user: User = .mock(),
                      organization: Organization? = nil,
                      flareTag: FlareTag? = nil) -> Article {
-        Article(typeOf: typeOf, id: id, title: title, description: description, readablePublishDate: readablePublishDate, slug: slug, path: path, url: url, commentsCount: commentsCount, publicReactionsCount: publicReactionsCount, collectionId: collectionId, publishedTimestamp: publishedTimestamp, positiveReactionsCount: positiveReactionsCount, coverImage: coverImage, socialImage: socialImage, canonicalUrl: canonicalUrl, createdAt: createdAt, editedAt: editedAt, crosspostedAt: crosspostedAt, publishedAt: publishedAt, lastCommentAt: lastCommentAt, tagList: tagList, tags: tags, user: user, organization: organization, flareTag: flareTag)
+        Article(typeOf: typeOf, id: id, title: title, description: description, readablePublishDate: readablePublishDate, slug: slug, path: path, url: url, commentsCount: commentsCount, publicReactionsCount: publicReactionsCount, collectionId: collectionId, publishedTimestamp: publishedTimestamp, positiveReactionsCount: positiveReactionsCount, coverImage: coverImage, socialImage: socialImage, canonicalUrl: canonicalUrl, createdAt: createdAt, editedAt: editedAt, crosspostedAt: crosspostedAt, publishedAt: publishedAt, lastCommentAt: lastCommentAt, tagList: tagList, tags: tags, readingTimeMinutes: readingTimeMinutes, user: user, organization: organization, flareTag: flareTag)
     }
 }
 
