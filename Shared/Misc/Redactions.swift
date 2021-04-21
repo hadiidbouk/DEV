@@ -9,6 +9,7 @@ import SwiftUI
 
 extension RedactionReasons {
     public static let animatedPlaceholder = RedactionReasons(rawValue: 100)
+    public static let hidden = RedactionReasons(rawValue: 101)
 }
 
 enum ShapeType {
@@ -103,6 +104,9 @@ private struct Redactable: ViewModifier {
         case .animatedPlaceholder:
             content
                 .modifier(AnimatedPlaceholder(shapeType: shapeType))
+        case .hidden:
+                content
+                    .hidden()
         default:
             content
         }
