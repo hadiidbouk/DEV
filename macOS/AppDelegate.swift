@@ -9,11 +9,14 @@ import SwiftUI
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let windows = NSApplication.shared.windows
-        windows.forEach { window in
+        NSApp.windows.forEach { window in
             window.titlebarAppearsTransparent = true
             window.backgroundColor = NSColor(.background)
-            window.titlebarContainerView?.layer?.backgroundColor = NSColor(.background).cgColor
+            window.titlebarView?.addBackgroundColor(NSColor(.background))
+        }
+    }
+}
+
         }
     }
 }
