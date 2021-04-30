@@ -15,6 +15,10 @@ extension NSWindow {
     var titlebarView: NSView? {
         titlebarContainerView?.subviews.first(where: \.isTitlebarView)
     }
+
+    var splitView: NSSplitView? {
+        contentView?.findViews(subclassOf: NSSplitView.self).first
+    }
 }
 
 private extension NSView {
@@ -26,5 +30,15 @@ private extension NSView {
     var isTitlebarView: Bool {
         guard let `class` = NSClassFromString("NSTitlebarView") else { return false }
         return isKind(of: `class`)
+    }
+}
+
+private extension NSView {
+    func findViews<T: NSView>(subclassOf: T.Type) -> [T] {
+        return recursiveSubviews.compactMap { $0 as? T }
+    }
+
+    var recursiveSubviews: [NSView] {
+        return subviews + subviews.flatMap { $0.recursiveSubviews }
     }
 }

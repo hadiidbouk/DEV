@@ -8,7 +8,13 @@
 import AppKit
 
 extension NSView {
-    func addBackgroundColor(_ color: NSColor) {
+    func setBackgroundColor(_ color: NSColor) {
         setValue(color, forKey: "backgroundColor")
+    }
+}
+
+extension NSSplitView {
+    func setDividerColor(_ color: NSColor) {
+        setValue(color, forKey: "dividerColor")
     }
 }
