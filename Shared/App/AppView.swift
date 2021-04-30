@@ -23,6 +23,7 @@ struct AppView: View {
     var body: some View {
         let moduleView = WithViewStore(store) { viewStore in
             let view = viewStore.selectedModule.view(store)
+                .padding(.horizontal)
                 .frame(minWidth: Layout.minWindowWidth,
                        maxWidth: .infinity,
                        minHeight: Layout.minWindowHeight,

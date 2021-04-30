@@ -23,7 +23,6 @@ struct HomeView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding()
             .onAppear { viewStore.send(.loadLatestArticles) }
         }
     }
