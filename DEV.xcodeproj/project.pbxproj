@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FA09250A262CD8F900AF93A0 /* NSWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */; };
+		FA0E90BD263E12BF0093629B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA0E90BC263E12BF0093629B /* URLImage */; };
+		FA0E90BF263E17CB0093629B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA0E90BE263E17CB0093629B /* URLImage */; };
 		FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
@@ -19,8 +21,6 @@
 		FA51B48B261F4F9F003E7DF3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B489261F4F9F003E7DF3 /* AppError.swift */; };
 		FA51B494261F56A7003E7DF3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */; };
 		FA51B495261F56A7003E7DF3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */; };
-		FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B49B261F58C6003E7DF3 /* Kingfisher */; };
-		FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B4A1261F58CF003E7DF3 /* Kingfisher */; };
 		FA51B4A8261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA51B4A9261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA5BBCEF2630C43100FC16FB /* SponsorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB8622611182300AB95FC /* SponsorsView.swift */; };
@@ -107,7 +107,7 @@
 
 /* Begin PBXFileReference section */
 		FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extensions.swift"; sourceTree = "<group>"; };
-		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		FA41F54F263DADED0067F802 /* NSTableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Extensions.swift"; sourceTree = "<group>"; };
 		FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADAC2AB262A1CFD00103D5F /* DEVAPI in Frameworks */,
-				FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */,
+				FA0E90BD263E12BF0093629B /* URLImage in Frameworks */,
 				FAABEF28260927F500753714 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADAC2AD262A1D0100103D5F /* DEVAPI in Frameworks */,
-				FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */,
+				FA0E90BF263E17CB0093629B /* URLImage in Frameworks */,
 				FAABEF2D2609285D00753714 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,8 +503,8 @@
 			name = "DEV (iOS)";
 			packageProductDependencies = (
 				FAABEF27260927F500753714 /* ComposableArchitecture */,
-				FA51B49B261F58C6003E7DF3 /* Kingfisher */,
 				FADAC2AA262A1CFD00103D5F /* DEVAPI */,
+				FA0E90BC263E12BF0093629B /* URLImage */,
 			);
 			productName = "DEV (iOS)";
 			productReference = FAABEF032609257E00753714 /* DEV.app */;
@@ -526,8 +526,8 @@
 			name = "DEV (macOS)";
 			packageProductDependencies = (
 				FAABEF2C2609285D00753714 /* ComposableArchitecture */,
-				FA51B4A1261F58CF003E7DF3 /* Kingfisher */,
 				FADAC2AC262A1D0100103D5F /* DEVAPI */,
+				FA0E90BE263E17CB0093629B /* URLImage */,
 			);
 			productName = "DEV (macOS)";
 			productReference = FAABEF0B2609257E00753714 /* DEV.app */;
@@ -609,7 +609,7 @@
 			mainGroup = FAABEEF62609257D00753714;
 			packageReferences = (
 				FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = FAABEF042609257E00753714 /* Products */;
 			projectDirPath = "";
@@ -1181,12 +1181,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.2.1;
+				minimumVersion = 2.2.5;
 			};
 		};
 		FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
@@ -1200,15 +1200,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA51B49B261F58C6003E7DF3 /* Kingfisher */ = {
+		FA0E90BC263E12BF0093629B /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
-		FA51B4A1261F58CF003E7DF3 /* Kingfisher */ = {
+		FA0E90BE263E17CB0093629B /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
 		FAABEF27260927F500753714 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
