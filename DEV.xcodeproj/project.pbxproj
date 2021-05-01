@@ -14,7 +14,6 @@
 		FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
 		FA317E0C261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
-		FA41F552263DB56E0067F802 /* NSTableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41F54F263DADED0067F802 /* NSTableView+Extensions.swift */; };
 		FA41F554263DDF020067F802 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */; };
 		FA41F555263DDF020067F802 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */; };
 		FA51B48A261F4F9F003E7DF3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B489261F4F9F003E7DF3 /* AppError.swift */; };
@@ -109,7 +108,6 @@
 		FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extensions.swift"; sourceTree = "<group>"; };
 		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
-		FA41F54F263DADED0067F802 /* NSTableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Extensions.swift"; sourceTree = "<group>"; };
 		FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		FA51B489261F4F9F003E7DF3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				FAFB74EE2611E000008269BB /* Layout+Extensions.swift */,
 				FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */,
 				FA8F711F2638A3F100E4D141 /* NSView+Extensions.swift */,
-				FA41F54F263DADED0067F802 /* NSTableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -775,7 +772,6 @@
 				FAABEF102609257E00753714 /* App.swift in Sources */,
 				FABBB82C2610AACA00AB95FC /* TagsView.swift in Sources */,
 				FA51B4A9261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */,
-				FA41F552263DB56E0067F802 /* NSTableView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,19 +14,22 @@ private enum Layout {
 }
 
 struct HomeView: View {
+    @State private var articleListRect: CGRect = .zero
     let store: Store<HomeState, HomeAction>
 
     var body: some View {
         WithViewStore(store) { viewStore in
-            List {
+            ScrollView {
                 HStack(alignment: .top, spacing: .zero) {
                     LazyVStack(spacing: Layout.articlesStackSpacing) {
                         ForEach(viewStore.articles, id: \.self) { article in
                             ArticleView(article: article,
                                         isRedacted: viewStore.binding(get: \.isLoading,
-                                                                      send: HomeAction.none))
+                                                                      send: HomeAction.none),
+                                        articleListRect: $articleListRect)
                         }
                     }
+                    .rectReader($articleListRect)
 
                     // TODO: Replace this with real content
                     #if os(macOS)
@@ -40,10 +43,7 @@ struct HomeView: View {
                     .frame(minWidth: .zero, maxWidth: 300)
                     #endif
                 }
-                .listRowBackground(Color.background)
-                .listRowInsets(.zero)
             }
-            .listStyle(PlainListStyle())
             .padding(Layout.articlePadding)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onAppear { viewStore.send(.loadLatestArticles) }
