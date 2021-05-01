@@ -20,11 +20,13 @@ extension ArticleView {
 struct ArticleView: View {
     let article: Article
     @Binding var isRedacted: Bool
+    @Binding var articleListRect: CGRect
 
     var body: some View {
         VStack {
             if let coverImage = article.coverImage {
-                RemoteImageView(imageUrl: coverImage)
+                RemoteImageView(imageUrl: coverImage, contentMode: .fill)
+                    .frame(maxWidth: articleListRect.size.width)
             }
 
             VStack(alignment: .leading) {
@@ -174,7 +176,9 @@ private struct SaveView: View {
 #if DEBUG
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleView(article: .mock(), isRedacted: .constant(false))
+        ArticleView(article: .mock(),
+                    isRedacted: .constant(false),
+                    articleListRect: .constant(.zero))
             .padding()
     }
 }
