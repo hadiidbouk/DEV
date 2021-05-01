@@ -12,16 +12,15 @@ struct RemoteImageView: View {
     let imageUrl: String
     var cacheId: String = UUID().uuidString
     var placeholder: AnyView = Color.background.anyView
+    var contentMode: SwiftUI.ContentMode = .fit
 
     var body: some View {
-        VStack {
-            KFImage(URL(string: imageUrl))
-                .placeholder { placeholder }
-                .cacheMemoryOnly()
-                .fromMemoryCacheOrRefresh()
-                .resizable()
-                .scaledToFill()
-        }
+        KFImage(URL(string: imageUrl))
+            .placeholder { placeholder }
+            .cacheMemoryOnly()
+            .fromMemoryCacheOrRefresh()
+            .resizable()
+            .aspectRatio(contentMode: contentMode)
     }
 }
 

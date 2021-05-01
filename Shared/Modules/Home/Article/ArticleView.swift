@@ -22,31 +22,37 @@ struct ArticleView: View {
     @Binding var isRedacted: Bool
 
     var body: some View {
-        VStack(alignment: .leading) {
-            UserInfoView(name: article.user.name,
-                         date: article.readablePublishDate,
-                         image: article.user.profileImage90)
-
-            Group {
-                TitleView(title: article.title)
-                    .redactable()
-
-                TagListView(tags: article.tagList.map { TagItem(text: $0) })
-
-                HStack {
-                    ReactionsAndCommentsView(reactionsCount: article.publicReactionsCount,
-                                             commentsCount: article.commentsCount)
-
-                    Spacer()
-
-                    SaveView(readingTime: article.readingTimeMinutes)
-                        .redacted(reason: isRedacted ? .hidden : [])
-                }
+        VStack {
+            if let coverImage = article.coverImage {
+                RemoteImageView(imageUrl: coverImage)
             }
-            .padding(.leading, Layout.viewsLeadingPadding)
-            .padding(.top, Layout.viewsTopPadding)
+
+            VStack(alignment: .leading) {
+                UserInfoView(name: article.user.name,
+                             date: article.readablePublishDate,
+                             image: article.user.profileImage90)
+
+                Group {
+                    TitleView(title: article.title)
+                        .redactable()
+
+                    TagListView(tags: article.tagList.map { TagItem(text: $0) })
+
+                    HStack {
+                        ReactionsAndCommentsView(reactionsCount: article.publicReactionsCount,
+                                                 commentsCount: article.commentsCount)
+
+                        Spacer()
+
+                        SaveView(readingTime: article.readingTimeMinutes)
+                            .redacted(reason: isRedacted ? .hidden : [])
+                    }
+                }
+                .padding(.leading, Layout.viewsLeadingPadding)
+                .padding(.top, Layout.viewsTopPadding)
+            }
+            .padding(Layout.contentPadding)
         }
-        .padding(Layout.contentPadding)
         .applyBackground(.appPrimary)
         .applyBorder()
         .redacted(reason: isRedacted ? .animatedPlaceholder : [])
