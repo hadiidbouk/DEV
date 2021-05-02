@@ -11,6 +11,7 @@ import SwiftUI
 private enum Layout {
     static let minWindowWidth: CGFloat = Platform.is(.macOS) ? 1_024 : 0
     static let minWindowHeight: CGFloat = Platform.is(.macOS) ? 768 : 0
+    static let moduleHorizontalPadding: CGFloat = Platform.is(.macOS) ? 30 : 0
 }
 
 struct AppView: View {
@@ -23,7 +24,7 @@ struct AppView: View {
     var body: some View {
         let moduleView = WithViewStore(store) { viewStore in
             let view = viewStore.selectedModule.view(store)
-                .padding(.horizontal)
+                .padding(.horizontal, Layout.moduleHorizontalPadding)
                 .frame(minWidth: Layout.minWindowWidth,
                        maxWidth: .infinity,
                        minHeight: Layout.minWindowHeight,
@@ -61,6 +62,7 @@ struct AppView: View {
             let newAppearance = UINavigationBarAppearance()
             newAppearance.backgroundColor = UIColor(Color.background)
             UINavigationBar.appearance().standardAppearance = newAppearance
+            UITableView.appearance().backgroundColor = .clear
             #endif
         }
     }

@@ -18,35 +18,44 @@ extension ArticleView {
 }
 
 struct ArticleView: View {
-    let article: Article
+    let articleDto: ArticleDto
+    let shouldShowCoverImage: Bool
     @Binding var isRedacted: Bool
+    @Binding var articleListRect: CGRect
 
     var body: some View {
-        VStack(alignment: .leading) {
-            UserInfoView(name: article.user.name,
-                         date: article.readablePublishDate,
-                         image: article.user.profileImage90)
-
-            Group {
-                TitleView(title: article.title)
-                    .redactable()
-
-                TagListView(tags: article.tagList.map { TagItem(text: $0) })
-
-                HStack {
-                    ReactionsAndCommentsView(reactionsCount: article.publicReactionsCount,
-                                             commentsCount: article.commentsCount)
-
-                    Spacer()
-
-                    SaveView(readingTime: article.readingTimeMinutes)
-                        .redacted(reason: isRedacted ? .hidden : [])
-                }
+        VStack {
+            if let coverImage = articleDto.coverImageUrl, shouldShowCoverImage {
+                RemoteImageView(imageUrl: coverImage, contentMode: .fill)
+                    .frame(maxWidth: articleListRect.size.width)
             }
-            .padding(.leading, Layout.viewsLeadingPadding)
-            .padding(.top, Layout.viewsTopPadding)
+
+            VStack(alignment: .leading) {
+                UserInfoView(name: articleDto.userName,
+                             date: articleDto.publishedDateString,
+                             image: articleDto.userProfileImageUrl)
+
+                Group {
+                    TitleView(title: articleDto.title)
+                        .redactable()
+
+                    TagListView(tags: articleDto.tags)
+
+                    HStack {
+                        ReactionsAndCommentsView(reactionsCount: articleDto.reactionsCount,
+                                                 commentsCount: articleDto.commentsCount)
+
+                        Spacer()
+
+                        SaveView(readingTime: articleDto.readingTimeMinutes)
+                            .redacted(reason: isRedacted ? .hidden : [])
+                    }
+                }
+                .padding(.leading, Layout.viewsLeadingPadding)
+                .padding(.top, Layout.viewsTopPadding)
+            }
+            .padding(Layout.contentPadding)
         }
-        .padding(Layout.contentPadding)
         .applyBackground(.appPrimary)
         .applyBorder()
         .redacted(reason: isRedacted ? .animatedPlaceholder : [])
@@ -168,7 +177,10 @@ private struct SaveView: View {
 #if DEBUG
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleView(article: .mock(), isRedacted: .constant(false))
+        ArticleView(articleDto: .from(.mock()),
+                    shouldShowCoverImage: true,
+                    isRedacted: .constant(false),
+                    articleListRect: .constant(.zero))
             .padding()
     }
 }

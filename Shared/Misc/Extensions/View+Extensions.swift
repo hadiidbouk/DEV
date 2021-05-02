@@ -16,13 +16,15 @@ extension View {
     var anyView: AnyView { AnyView(self) }
 
     func rectReader(_ binding: Binding<CGRect>, in coordinatorSpace: CoordinateSpace = .local) -> some View {
-        return GeometryReader { geometry -> Color in
-            let rect = geometry.frame(in: coordinatorSpace)
-            DispatchQueue.main.async {
-                binding.wrappedValue = rect
+        background(
+            GeometryReader { geometry -> Color in
+                let rect = geometry.frame(in: coordinatorSpace)
+                DispatchQueue.main.async {
+                    binding.wrappedValue = rect
+                }
+                return .clear
             }
-            return .clear
-        }
+        )
     }
 
     func applyBackground(_ color: Color = .background) -> some View {
@@ -36,10 +38,11 @@ extension View {
     func applyBorder(cornerRadius: CGFloat = 5,
                      color: Color = .border,
                      lineWidth: CGFloat = 1) -> some View {
-        self
-        .overlay(
-            RoundedRectangle(cornerRadius: cornerRadius)
+        let shape = RoundedRectangle(cornerRadius: cornerRadius)
+        return overlay(
+            shape
                 .stroke(color, lineWidth: lineWidth)
         )
+        .clipShape(shape)
     }
 }

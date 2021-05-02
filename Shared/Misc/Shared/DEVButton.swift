@@ -52,6 +52,7 @@ struct DEVButton: View {
                 title: {
                     Text(title)
                         .font(config.textFont)
+                        .fixedSize(horizontal: false, vertical: true)
                 },
                 icon: {
                     Image(imageName)

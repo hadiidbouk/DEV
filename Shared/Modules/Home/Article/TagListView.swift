@@ -67,7 +67,7 @@ struct TagListView: View {
                     }
             }
         }
-        .background(rectReader($rect))
+        .rectReader($rect)
         .redactable()
     }
 }

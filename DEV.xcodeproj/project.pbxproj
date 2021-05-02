@@ -8,16 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FA09250A262CD8F900AF93A0 /* NSWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */; };
+		FA0E90BD263E12BF0093629B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA0E90BC263E12BF0093629B /* URLImage */; };
+		FA0E90BF263E17CB0093629B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA0E90BE263E17CB0093629B /* URLImage */; };
+		FA0E90C1263EEB590093629B /* ArticleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C0263EEB590093629B /* ArticleDto.swift */; };
+		FA0E90C2263EEB590093629B /* ArticleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C0263EEB590093629B /* ArticleDto.swift */; };
+		FA0E90C4263EF1780093629B /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C3263EF1780093629B /* Optional+Extensions.swift */; };
+		FA0E90C5263EF1780093629B /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C3263EF1780093629B /* Optional+Extensions.swift */; };
 		FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
 		FA317E0C261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
+		FA41F554263DDF020067F802 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */; };
+		FA41F555263DDF020067F802 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */; };
 		FA51B48A261F4F9F003E7DF3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B489261F4F9F003E7DF3 /* AppError.swift */; };
 		FA51B48B261F4F9F003E7DF3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B489261F4F9F003E7DF3 /* AppError.swift */; };
 		FA51B494261F56A7003E7DF3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */; };
 		FA51B495261F56A7003E7DF3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */; };
-		FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B49B261F58C6003E7DF3 /* Kingfisher */; };
-		FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA51B4A1261F58CF003E7DF3 /* Kingfisher */; };
 		FA51B4A8261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA51B4A9261F5B93003E7DF3 /* RoundedBorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */; };
 		FA5BBCEF2630C43100FC16FB /* SponsorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBB8622611182300AB95FC /* SponsorsView.swift */; };
@@ -104,8 +110,11 @@
 
 /* Begin PBXFileReference section */
 		FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extensions.swift"; sourceTree = "<group>"; };
-		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		FA0E90C0263EEB590093629B /* ArticleDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDto.swift; sourceTree = "<group>"; };
+		FA0E90C3263EF1780093629B /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		FA51B489261F4F9F003E7DF3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		FA51B493261F56A7003E7DF3 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		FA51B4A7261F5B93003E7DF3 /* RoundedBorderViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderViewModifier.swift; sourceTree = "<group>"; };
@@ -159,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADAC2AB262A1CFD00103D5F /* DEVAPI in Frameworks */,
-				FA51B49C261F58C6003E7DF3 /* Kingfisher in Frameworks */,
+				FA0E90BD263E12BF0093629B /* URLImage in Frameworks */,
 				FAABEF28260927F500753714 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADAC2AD262A1D0100103D5F /* DEVAPI in Frameworks */,
-				FA51B4A2261F58CF003E7DF3 /* Kingfisher in Frameworks */,
+				FA0E90BF263E17CB0093629B /* URLImage in Frameworks */,
 				FAABEF2D2609285D00753714 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +215,7 @@
 			children = (
 				FA23D5252615127D00A00E36 /* ArticleView.swift */,
 				FA317E0A261771BD00E8A660 /* TagListView.swift */,
+				FA0E90C0263EEB590093629B /* ArticleDto.swift */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -235,6 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */,
+				FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */,
+				FA0E90C3263EF1780093629B /* Optional+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -496,8 +508,8 @@
 			name = "DEV (iOS)";
 			packageProductDependencies = (
 				FAABEF27260927F500753714 /* ComposableArchitecture */,
-				FA51B49B261F58C6003E7DF3 /* Kingfisher */,
 				FADAC2AA262A1CFD00103D5F /* DEVAPI */,
+				FA0E90BC263E12BF0093629B /* URLImage */,
 			);
 			productName = "DEV (iOS)";
 			productReference = FAABEF032609257E00753714 /* DEV.app */;
@@ -519,8 +531,8 @@
 			name = "DEV (macOS)";
 			packageProductDependencies = (
 				FAABEF2C2609285D00753714 /* ComposableArchitecture */,
-				FA51B4A1261F58CF003E7DF3 /* Kingfisher */,
 				FADAC2AC262A1D0100103D5F /* DEVAPI */,
+				FA0E90BE263E17CB0093629B /* URLImage */,
 			);
 			productName = "DEV (macOS)";
 			productReference = FAABEF0B2609257E00753714 /* DEV.app */;
@@ -602,7 +614,7 @@
 			mainGroup = FAABEEF62609257D00753714;
 			packageReferences = (
 				FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = FAABEF042609257E00753714 /* Products */;
 			projectDirPath = "";
@@ -698,6 +710,7 @@
 				FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */,
 				FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */,
 				FABBB84F2611175400AB95FC /* DEVShopView.swift in Sources */,
+				FA0E90C1263EEB590093629B /* ArticleDto.swift in Sources */,
 				FAABEF372609292800753714 /* HomeView.swift in Sources */,
 				FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */,
 				FABBB82B2610AACA00AB95FC /* TagsView.swift in Sources */,
@@ -705,6 +718,7 @@
 				FABBB7E5260FC10C00AB95FC /* ListingsView.swift in Sources */,
 				FABBB87F26111BE000AB95FC /* TermsOfUseView.swift in Sources */,
 				FAA7A0A7260BABAC007F48A1 /* Module.swift in Sources */,
+				FA0E90C4263EF1780093629B /* Optional+Extensions.swift in Sources */,
 				FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */,
 				FAB43F63260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF112609257E00753714 /* AppView.swift in Sources */,
@@ -721,6 +735,7 @@
 				FABBB81F2610AA0300AB95FC /* VideosView.swift in Sources */,
 				FAABEF3D2609297F00753714 /* AppCore.swift in Sources */,
 				FABBB813260FEE6700AB95FC /* PodcastsView.swift in Sources */,
+				FA41F554263DDF020067F802 /* EdgeInsets+Extensions.swift in Sources */,
 				FABBB8A5261120E300AB95FC /* AppSideBarView.swift in Sources */,
 				FA51B48A261F4F9F003E7DF3 /* AppError.swift in Sources */,
 				FA51B494261F56A7003E7DF3 /* RemoteImageView.swift in Sources */,
@@ -732,7 +747,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF48260929B800753714 /* HomeView.swift in Sources */,
+				FA0E90C2263EEB590093629B /* ArticleDto.swift in Sources */,
 				FAFB75112611E9B5008269BB /* Color+Extensions.swift in Sources */,
+				FA0E90C5263EF1780093629B /* Optional+Extensions.swift in Sources */,
 				FA8F71202638A3F100E4D141 /* NSView+Extensions.swift in Sources */,
 				FAFB74FA2611E012008269BB /* Layout+Extensions.swift in Sources */,
 				FABBB8502611175400AB95FC /* DEVShopView.swift in Sources */,
@@ -746,6 +763,7 @@
 				FA7B3A7A262E198A008EAA46 /* Redactions.swift in Sources */,
 				FAA7A0A8260BABAC007F48A1 /* Module.swift in Sources */,
 				FA51B48B261F4F9F003E7DF3 /* AppError.swift in Sources */,
+				FA41F555263DDF020067F802 /* EdgeInsets+Extensions.swift in Sources */,
 				FAB43F64260D3CD2005D2D73 /* ReadingListView.swift in Sources */,
 				FAABEF122609257E00753714 /* AppView.swift in Sources */,
 				FA5BBCEF2630C43100FC16FB /* SponsorsView.swift in Sources */,
@@ -1171,12 +1189,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.2.1;
+				minimumVersion = 2.2.5;
 			};
 		};
 		FAABEF26260927F500753714 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
@@ -1190,15 +1208,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA51B49B261F58C6003E7DF3 /* Kingfisher */ = {
+		FA0E90BC263E12BF0093629B /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
-		FA51B4A1261F58CF003E7DF3 /* Kingfisher */ = {
+		FA0E90BE263E17CB0093629B /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA51B49A261F58C6003E7DF3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = FA0E90BB263E12BF0093629B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
 		FAABEF27260927F500753714 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;

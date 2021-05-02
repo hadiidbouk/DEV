@@ -5,23 +5,29 @@
 //  Created by Hadi on 08/04/2021.
 //
 
-import Kingfisher
 import SwiftUI
+import URLImage
 
 struct RemoteImageView: View {
     let imageUrl: String
     var cacheId: String = UUID().uuidString
-    var placeholder: AnyView = Color.background.anyView
+    var placeholder: () -> AnyView = { Color.background.anyView }
+    var contentMode: SwiftUI.ContentMode = .fit
 
     var body: some View {
-        VStack {
-            KFImage(URL(string: imageUrl))
-                .placeholder { placeholder }
-                .cacheMemoryOnly()
-                .fromMemoryCacheOrRefresh()
+        guard let url = URL(string: imageUrl) else { return placeholder().anyView }
+        let inProgress: (Float?) -> AnyView = { _ in placeholder() }
+        let failure: (Error, () -> Void) -> AnyView = { _, _ in placeholder() }
+
+        return URLImage(url: url,
+                        empty: placeholder,
+                        inProgress: inProgress,
+                        failure: failure) { image in
+            image
                 .resizable()
-                .scaledToFill()
+                .aspectRatio(contentMode: contentMode)
         }
+        .anyView
     }
 }
 
