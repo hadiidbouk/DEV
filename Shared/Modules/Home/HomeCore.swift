@@ -41,6 +41,13 @@ let homeReducer = Reducer<HomeState, HomeAction, HomeEnvironment> { state, actio
 
     case let .loadLatestArticlesResponse(.success(articles)):
         state.articles = articles
+
+        if articles.first?.coverImage == nil,
+           let index = articles.firstIndex(where: { !$0.coverImage.isNilOrEmpty }) {
+            let article = state.articles.remove(at: index)
+            state.articles.insert(article, at: 0)
+        }
+
         state.isLoading = false
         return .none
     case let .loadLatestArticlesResponse(.failure(error)):
