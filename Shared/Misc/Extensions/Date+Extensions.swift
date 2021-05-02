@@ -24,6 +24,9 @@ extension Date {
         let components: DateComponents = calendar.dateComponents(unitFlags, from: earliest, to: latest)
 
         if let hour = components.hour {
+            if hour >= 24 {
+                return ""
+            }
             if hour >= 2 {
                 return "\(hour) hours ago"
             } else if hour >= 1 {
