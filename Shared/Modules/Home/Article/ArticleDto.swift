@@ -22,7 +22,11 @@ struct ArticleDto {
 extension ArticleDto {
     static func from(_ article: Article) -> Self {
         let timeAgo = article.publishedAt?.timeAgo() ?? ""
-        let publishedDateTimeString = "\(article.readablePublishDate) (\(timeAgo))"
+        var publishedDateTimeString = article.readablePublishDate
+        if !timeAgo.isEmpty {
+            publishedDateTimeString += " (\(timeAgo))"
+        }
+
         return ArticleDto(coverImageUrl: article.coverImage,
                           publishedDateString: publishedDateTimeString,
                           userName: article.user.name,
