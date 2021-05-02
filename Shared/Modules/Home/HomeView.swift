@@ -23,7 +23,7 @@ struct HomeView: View {
                 HStack(alignment: .top, spacing: .zero) {
                     LazyVStack(spacing: Layout.articlesStackSpacing) {
                         ForEach(viewStore.articles, id: \.self) { article in
-                            ArticleView(article: article,
+                            ArticleView(articleDto: .from(article),
                                         isRedacted: viewStore.binding(get: \.isLoading,
                                                                       send: HomeAction.none),
                                         articleListRect: $articleListRect)
