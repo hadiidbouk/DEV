@@ -21,14 +21,16 @@ struct ArticleDto {
 
 extension ArticleDto {
     static func from(_ article: Article) -> Self {
-        ArticleDto(coverImageUrl: article.coverImage,
-                   publishedDateString: article.readablePublishDate,
-                   userName: article.user.name,
-                   userProfileImageUrl: article.user.profileImage90,
-                   title: article.title,
-                   tags: article.tagList.map { TagItem(text: $0) },
-                   reactionsCount: article.publicReactionsCount,
-                   commentsCount: article.commentsCount,
-                   readingTimeMinutes: article.readingTimeMinutes)
+        let timeAgo = article.publishedAt?.timeAgo() ?? ""
+        let publishedDateTimeString = "\(article.readablePublishDate) (\(timeAgo))"
+        return ArticleDto(coverImageUrl: article.coverImage,
+                          publishedDateString: publishedDateTimeString,
+                          userName: article.user.name,
+                          userProfileImageUrl: article.user.profileImage90,
+                          title: article.title,
+                          tags: article.tagList.map { TagItem(text: $0) },
+                          reactionsCount: article.publicReactionsCount,
+                          commentsCount: article.commentsCount,
+                          readingTimeMinutes: article.readingTimeMinutes)
     }
 }

@@ -14,6 +14,8 @@
 		FA0E90C2263EEB590093629B /* ArticleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C0263EEB590093629B /* ArticleDto.swift */; };
 		FA0E90C4263EF1780093629B /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C3263EF1780093629B /* Optional+Extensions.swift */; };
 		FA0E90C5263EF1780093629B /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C3263EF1780093629B /* Optional+Extensions.swift */; };
+		FA0E90C7263EFD460093629B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C6263EFD460093629B /* Date+Extensions.swift */; };
+		FA0E90C8263EFD460093629B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C6263EFD460093629B /* Date+Extensions.swift */; };
 		FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA23D5272615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
 		FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA317E0A261771BD00E8A660 /* TagListView.swift */; };
@@ -112,7 +114,8 @@
 		FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extensions.swift"; sourceTree = "<group>"; };
 		FA0E90C0263EEB590093629B /* ArticleDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDto.swift; sourceTree = "<group>"; };
 		FA0E90C3263EF1780093629B /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
-		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		FA0E90C6263EFD460093629B /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		FA51B489261F4F9F003E7DF3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -247,6 +250,7 @@
 				FAA7A07D260B97F2007F48A1 /* View+Extensions.swift */,
 				FA41F553263DDF020067F802 /* EdgeInsets+Extensions.swift */,
 				FA0E90C3263EF1780093629B /* Optional+Extensions.swift */,
+				FA0E90C6263EFD460093629B /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -715,6 +719,7 @@
 				FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */,
 				FABBB82B2610AACA00AB95FC /* TagsView.swift in Sources */,
 				FAFB75102611E9B5008269BB /* Color+Extensions.swift in Sources */,
+				FA0E90C7263EFD460093629B /* Date+Extensions.swift in Sources */,
 				FABBB7E5260FC10C00AB95FC /* ListingsView.swift in Sources */,
 				FABBB87F26111BE000AB95FC /* TermsOfUseView.swift in Sources */,
 				FAA7A0A7260BABAC007F48A1 /* Module.swift in Sources */,
@@ -778,6 +783,7 @@
 				FABBB814260FEE6700AB95FC /* PodcastsView.swift in Sources */,
 				FABBB7DA260FBEED00AB95FC /* Cursor.swift in Sources */,
 				FA51B495261F56A7003E7DF3 /* RemoteImageView.swift in Sources */,
+				FA0E90C8263EFD460093629B /* Date+Extensions.swift in Sources */,
 				FAFF5AB0261A4FAC00B94641 /* AppDelegate.swift in Sources */,
 				FAABEF45260929B500753714 /* HomeCore.swift in Sources */,
 				FAA7A08E260B9A54007F48A1 /* View+Extensions.swift in Sources */,
