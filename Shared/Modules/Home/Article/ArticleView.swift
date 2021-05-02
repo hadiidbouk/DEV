@@ -18,35 +18,36 @@ extension ArticleView {
 }
 
 struct ArticleView: View {
-    let article: Article
+    let articleDto: ArticleDto
+    let shouldShowCoverImage: Bool
     @Binding var isRedacted: Bool
     @Binding var articleListRect: CGRect
 
     var body: some View {
         VStack {
-            if let coverImage = article.coverImage {
+            if let coverImage = articleDto.coverImageUrl, shouldShowCoverImage {
                 RemoteImageView(imageUrl: coverImage, contentMode: .fill)
                     .frame(maxWidth: articleListRect.size.width)
             }
 
             VStack(alignment: .leading) {
-                UserInfoView(name: article.user.name,
-                             date: article.readablePublishDate,
-                             image: article.user.profileImage90)
+                UserInfoView(name: articleDto.userName,
+                             date: articleDto.publishedDateString,
+                             image: articleDto.userProfileImageUrl)
 
                 Group {
-                    TitleView(title: article.title)
+                    TitleView(title: articleDto.title)
                         .redactable()
 
-                    TagListView(tags: article.tagList.map { TagItem(text: $0) })
+                    TagListView(tags: articleDto.tags)
 
                     HStack {
-                        ReactionsAndCommentsView(reactionsCount: article.publicReactionsCount,
-                                                 commentsCount: article.commentsCount)
+                        ReactionsAndCommentsView(reactionsCount: articleDto.reactionsCount,
+                                                 commentsCount: articleDto.commentsCount)
 
                         Spacer()
 
-                        SaveView(readingTime: article.readingTimeMinutes)
+                        SaveView(readingTime: articleDto.readingTimeMinutes)
                             .redacted(reason: isRedacted ? .hidden : [])
                     }
                 }
@@ -176,7 +177,8 @@ private struct SaveView: View {
 #if DEBUG
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleView(article: .mock(),
+        ArticleView(articleDto: .from(.mock()),
+                    shouldShowCoverImage: true,
                     isRedacted: .constant(false),
                     articleListRect: .constant(.zero))
             .padding()

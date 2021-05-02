@@ -10,6 +10,8 @@
 		FA09250A262CD8F900AF93A0 /* NSWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */; };
 		FA0E90BD263E12BF0093629B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA0E90BC263E12BF0093629B /* URLImage */; };
 		FA0E90BF263E17CB0093629B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA0E90BE263E17CB0093629B /* URLImage */; };
+		FA0E90C1263EEB590093629B /* ArticleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C0263EEB590093629B /* ArticleDto.swift */; };
+		FA0E90C2263EEB590093629B /* ArticleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C0263EEB590093629B /* ArticleDto.swift */; };
 		FA0E90C4263EF1780093629B /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C3263EF1780093629B /* Optional+Extensions.swift */; };
 		FA0E90C5263EF1780093629B /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E90C3263EF1780093629B /* Optional+Extensions.swift */; };
 		FA23D5262615127D00A00E36 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D5252615127D00A00E36 /* ArticleView.swift */; };
@@ -108,6 +110,7 @@
 
 /* Begin PBXFileReference section */
 		FA092509262CD8F900AF93A0 /* NSWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extensions.swift"; sourceTree = "<group>"; };
+		FA0E90C0263EEB590093629B /* ArticleDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDto.swift; sourceTree = "<group>"; };
 		FA0E90C3263EF1780093629B /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		FA23D5252615127D00A00E36 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		FA317E0A261771BD00E8A660 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
@@ -212,6 +215,7 @@
 			children = (
 				FA23D5252615127D00A00E36 /* ArticleView.swift */,
 				FA317E0A261771BD00E8A660 /* TagListView.swift */,
+				FA0E90C0263EEB590093629B /* ArticleDto.swift */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -706,6 +710,7 @@
 				FAFB74F52611E00D008269BB /* Layout+Extensions.swift in Sources */,
 				FA317E0B261771BD00E8A660 /* TagListView.swift in Sources */,
 				FABBB84F2611175400AB95FC /* DEVShopView.swift in Sources */,
+				FA0E90C1263EEB590093629B /* ArticleDto.swift in Sources */,
 				FAABEF372609292800753714 /* HomeView.swift in Sources */,
 				FAA7A07E260B97F2007F48A1 /* View+Extensions.swift in Sources */,
 				FABBB82B2610AACA00AB95FC /* TagsView.swift in Sources */,
@@ -742,6 +747,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAABEF48260929B800753714 /* HomeView.swift in Sources */,
+				FA0E90C2263EEB590093629B /* ArticleDto.swift in Sources */,
 				FAFB75112611E9B5008269BB /* Color+Extensions.swift in Sources */,
 				FA0E90C5263EF1780093629B /* Optional+Extensions.swift in Sources */,
 				FA8F71202638A3F100E4D141 /* NSView+Extensions.swift in Sources */,
