@@ -24,6 +24,7 @@ struct HomeView: View {
                     LazyVStack(spacing: Layout.articlesStackSpacing) {
                         ForEach(viewStore.articles, id: \.self) { article in
                             ArticleView(articleDto: .from(article),
+                                        shouldShowCoverImage: article == viewStore.articles.first,
                                         isRedacted: viewStore.binding(get: \.isLoading,
                                                                       send: HomeAction.none),
                                         articleListRect: $articleListRect)
