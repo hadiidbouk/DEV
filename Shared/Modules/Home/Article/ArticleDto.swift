@@ -23,12 +23,27 @@ extension ArticleDto {
     static func from(_ article: Article) -> Self {
         let timeAgo = article.publishedAt?.timeAgo() ?? ""
         let publishedDateTimeString = "\(article.readablePublishDate) (\(timeAgo))"
+        var tags = article.tagList.map { tag -> TagItem in
+            var style = TagStyle()
+            if let flareTag = article.flareTag, flareTag.name == tag {
+                style = TagStyle(backgroundColor: .init(hex: flareTag.bgColorHex),
+                                 hashColor: .init(hex: flareTag.textColorHex),
+                                 textColor: .init(hex: flareTag.textColorHex))
+            }
+            return TagItem(text: tag, style: style)
+        }
+
+        if let flareTagIndex = tags.firstIndex(where: { $0.style.backgroundColor != .clear }) {
+            let flareTag = tags.remove(at: flareTagIndex)
+            tags.insert(flareTag, at: .zero)
+        }
+
         return ArticleDto(coverImageUrl: article.coverImage,
                           publishedDateString: publishedDateTimeString,
                           userName: article.user.name,
                           userProfileImageUrl: article.user.profileImage90,
                           title: article.title,
-                          tags: article.tagList.map { TagItem(text: $0) },
+                          tags: tags,
                           reactionsCount: article.publicReactionsCount,
                           commentsCount: article.commentsCount,
                           readingTimeMinutes: article.readingTimeMinutes)

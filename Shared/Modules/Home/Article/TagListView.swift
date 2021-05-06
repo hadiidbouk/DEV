@@ -25,6 +25,7 @@ extension TagListView {
     enum Layout {
         static let tagTextPadding: CGFloat = 3
         static let tagCornerRadius: CGFloat = 5
+        static let flareTagTrailingPadding: CGFloat = 4
     }
 }
 
@@ -32,6 +33,7 @@ struct TagListView: View {
     @State private var rect: CGRect = .zero
 
     let tags: [TagItem]
+
     var body: some View {
         VStack {
             GeometryReader { geometry in
@@ -87,6 +89,7 @@ private struct TagView: View {
         .padding(Layout.tagTextPadding)
         .background(style.backgroundColor)
         .clipShape(RoundedRectangle(cornerRadius: Layout.tagCornerRadius))
+        .padding(.trailing, style.backgroundColor == .clear ? .zero : Layout.flareTagTrailingPadding)
     }
 }
 
