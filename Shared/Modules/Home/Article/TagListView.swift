@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TagStyle: Hashable {
     var backgroundColor: Color = .clear
-    var hashColor: Color = .tertiaryText
     var textColor: Color = .secondaryText
 }
 
@@ -25,6 +24,8 @@ extension TagListView {
     enum Layout {
         static let tagTextPadding: CGFloat = 3
         static let tagCornerRadius: CGFloat = 5
+        static let flareTagTrailingPadding: CGFloat = 4
+        static let hashTagOpacity: Double = 0.7
     }
 }
 
@@ -32,6 +33,7 @@ struct TagListView: View {
     @State private var rect: CGRect = .zero
 
     let tags: [TagItem]
+
     var body: some View {
         VStack {
             GeometryReader { geometry in
@@ -79,7 +81,8 @@ private struct TagView: View {
     var body: some View {
         HStack(spacing: .zero) {
             Text("#")
-                .foregroundColor(style.hashColor)
+                .foregroundColor(style.textColor)
+                .opacity(Layout.hashTagOpacity)
 
             Text(text)
                 .foregroundColor(style.textColor)
@@ -87,6 +90,7 @@ private struct TagView: View {
         .padding(Layout.tagTextPadding)
         .background(style.backgroundColor)
         .clipShape(RoundedRectangle(cornerRadius: Layout.tagCornerRadius))
+        .padding(.trailing, style.backgroundColor == .clear ? .zero : Layout.flareTagTrailingPadding)
     }
 }
 
