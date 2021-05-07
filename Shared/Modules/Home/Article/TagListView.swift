@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TagStyle: Hashable {
     var backgroundColor: Color = .clear
-    var hashColor: Color = .tertiaryText
     var textColor: Color = .secondaryText
 }
 
@@ -26,6 +25,7 @@ extension TagListView {
         static let tagTextPadding: CGFloat = 3
         static let tagCornerRadius: CGFloat = 5
         static let flareTagTrailingPadding: CGFloat = 4
+        static let hashTagOpacity: Double = 0.7
     }
 }
 
@@ -81,7 +81,8 @@ private struct TagView: View {
     var body: some View {
         HStack(spacing: .zero) {
             Text("#")
-                .foregroundColor(style.hashColor)
+                .foregroundColor(style.textColor)
+                .opacity(Layout.hashTagOpacity)
 
             Text(text)
                 .foregroundColor(style.textColor)

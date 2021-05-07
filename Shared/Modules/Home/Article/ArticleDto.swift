@@ -27,7 +27,6 @@ extension ArticleDto {
             var style = TagStyle()
             if let flareTag = article.flareTag, flareTag.name == tag {
                 style = TagStyle(backgroundColor: .init(hex: flareTag.bgColorHex),
-                                 hashColor: .init(hex: flareTag.textColorHex),
                                  textColor: .init(hex: flareTag.textColorHex))
             }
             return TagItem(text: tag, style: style)
