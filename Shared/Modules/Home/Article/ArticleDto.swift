@@ -21,8 +21,6 @@ struct ArticleDto {
 
 extension ArticleDto {
     static func from(_ article: Article) -> Self {
-        let timeAgo = article.publishedAt?.timeAgo() ?? ""
-        let publishedDateTimeString = "\(article.readablePublishDate) (\(timeAgo))"
         var tags = article.tagList.map { tag -> TagItem in
             var style = TagStyle()
             if let flareTag = article.flareTag, flareTag.name == tag {
@@ -35,6 +33,12 @@ extension ArticleDto {
         if let flareTagIndex = tags.firstIndex(where: { $0.style.backgroundColor != .clear }) {
             let flareTag = tags.remove(at: flareTagIndex)
             tags.insert(flareTag, at: .zero)
+        }
+
+        let timeAgo = article.publishedAt?.timeAgo() ?? ""
+        var publishedDateTimeString = article.readablePublishDate
+        if !timeAgo.isEmpty {
+            publishedDateTimeString += " (\(timeAgo))"
         }
 
         return ArticleDto(coverImageUrl: article.coverImage,
